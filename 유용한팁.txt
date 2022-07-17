@@ -1,0 +1,15 @@
+* 소스 연결하기
+1. SourceTree 다운로드
+- https://www.sourcetreeapp.com/ 
+
+2. 아래 미리 올려 놓은 URL을 복사
+https://github.com/heejin31/htmlLecture.git
+
+3. 
+* 소스 올리기
+1. 소스트리를 켠 후 올릴 파일을 Stage로 올리기
+
+2. 커밋 메시지를 작성한 후 커밋
+ 
+
+-윈도우키+ 방향키 : 좌우 화면에 꽉차게 프로그램 이동시켜서 볼 수 있다.
