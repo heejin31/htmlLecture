@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디와 클래스</title>
+
+    <style>
+        p{
+            color: red;
+
+        }
+
+        p#text{
+            color: aqua;
+
+
+        }
+
+        p.text{
+            color: blueviolet;
+
+
+        }
+    </style>
+
+    <!-- 
+        아이디와 클래스 작성시 규칙
+        id와 class에는 정해진 이름이 없고 개발자가 임의대로 이름을 작성하는 편인데 
+        몇가지 규칙을 지켜야한다.
+        
+        한글금지,첫글자는 대문자가 올 수 없다.(Abc 안됨, aBc는 됨)
+        모든 이름은 대소문자를 구별한다. (apple과 aPple은 다름)
+        숫자는 이름 중간이나 끝에 올 수는 있지만 시작할 수는 없다.
+
+        보통 두개의 단어가 합쳐지는 경우  띄어쓰기를 사용할 수 없기 때문에 
+        subtitle = subTitle(카멜기법), sub_title, sub-title 로 구분한다.
+        
+        특수문자는 사용할 수 없다(-,_만 사용 가능)
+
+        목적에 맞는 네이밍을 사용한다(중요)
+
+        id = 고유의 이름 식별자 (#)
+             하나의 html문서에서 한번밖에 사용할 수 없다(중복사용불가)
+             태그에 대한 목적을 알려주는 용도로 많이 사용한다.
+             class보다 우선순위를 가진다.
+
+        class =  중복적으로 사용가능한 식별자 (.)
+                 사용하는데 제한이 없으며 하나의 태그에 여러개의 class가 들어갈 수 있다.
+                 보통 공통적인 css를 적용할 때 기능적인 네이밍을 넣어서 사용한다.
+                 
+       하나의 태그에 id와 class를 같이 사용해도 된다.
+       
+
+
+    -->
+    
+</head>
+<body>
+    <p id="text" class="text">p태그는 block요소입니다.</p>
+    <p class="text">p태그는 block요소입니다.</p>
+    <p class="text">p태그는 block요소입니다.</p>
+    <p class="text">p태그는 block요소입니다.</p>
+    <p>p태그는 block요소입니다.</p>
+    <p>p태그는 block요소입니다.</p>
+</body>
+</html>

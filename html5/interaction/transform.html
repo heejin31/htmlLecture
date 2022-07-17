@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tansform</title>
+    <style>
+        /*
+        transform(변형)속성
+        객체를 회전하거나 스케일을 조절하거나 하는 변형 요소
+        기본값으로 활용하거나 이벤트에 적용하는 요소로도 사용할 수 있다.
+
+        translate()
+        -현재위치를 기준으로 해당 객체를 x축과 y축으로 지정된 수치만큼 이동시킨다.(px,%)
+        음수,양수를 적용한 모든 숫자값을 의미하며, 음수면 반대로 양수면 정방향으로 이동한다.
+
+        그룹속성 translate(x,y)
+        값이 하나일경우 x축만 적용
+        translate3d(x,y,z)
+        -z축은 일반적으로 확인할 수 없으나 pespective를 설정하여 확인할 수 있다.(z축은 %단위가 없다. px만 사용)
+         순서는 반드시 지켜서 기입한다.
+
+         -webkit-transform: translate(100px);chome safari
+         -ms-transform: translate(100px);ie
+         -moz-transform: :translate(100px);firefox
+         -o-transform:translate(100px);opera
+
+         vendor prefix: 호환성 부분을 위해 처리하는 일종의 핵
+         rotate :객체를 회전, 단위는 deg를 사용한다. 
+         그룹속성에서 하나의 값만 사용시 x,y축 둘 다 적용
+
+         scale(): 객체를 중심을 기준으로 수치만큼 비율을 늘리거나 줄인다.
+         기본값은 1(100%),1보다 크면 확대 1보다 작으면 축소
+         위치값은 항상 객체의 가운데를 기준으로 하기 때문에 화면을 벗어나는 경우도 있다.
+
+         transform-origin : rotate나 scale같이 객체의 중심을 기준으로 하는 경우 기준을 바꾸는 용도로 사용한다.
+         px나 %처럼 숫자단위로도 쓰일 수 있으며 특정 위치값으로도 이동이 가능하다. 기본값은 50%, 50%
+         첫번째 값은 left, 두번째 값은 top이다.
+
+         skew(): 기울이기
+         해당 객체를 각도만큼 기울인다. 단위는 deg               
+
+
+        
+
+
+
+
+
+        
+    
+        */
+
+
+        div.box{
+            width: 100px;
+            height: 100px;
+            background: coral;
+            transform: scale(5);
+            /*transform-origin: left top;*/
+
+            
+
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+
+    <div class="box">
+        box
+    </div>
+    
+</body>
+</html>

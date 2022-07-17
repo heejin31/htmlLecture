@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>큐브예제 만들어보기</title>
+
+    <style>
+
+        body, html, div{
+            margin: 0px;
+            left: 0px;
+
+        }
+
+        div.container{
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+
+        }
+
+        div.cube{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: 3000ms;
+
+        }
+        div.cube:hover{
+            transform: rotate3d(1,1,1,-360deg);
+            /*rotate3d(x,y,z,deg)
+            x,y,z는 0과 1사이의 회전축
+            0: 회전안함
+            1: 회전함
+            
+            */
+        }
+
+        
+
+
+
+        div.cube_face{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 300px;
+
+
+        }
+
+        .front{
+            background: pink;
+            opacity: 0.7;
+            transform: translateZ(150px);
+
+        }
+
+        .back{
+            background: skyblue;
+            opacity: 0.7;
+            transform: translateZ(-150px);
+
+        }
+
+        .left{
+            background: coral;
+            opacity: 0.7;
+            transform: rotateY(-90deg) translateZ(150px);
+        }
+        .right{
+            background: purple;
+            opacity: 0.7;
+            transform: rotateY(90deg) translateZ(150px);
+
+        }
+
+        .top{
+            background: aqua;
+            opacity: 0.7;
+            transform: rotateX(90deg) translateZ(150px);
+
+        }
+
+        .bottom{
+            background: green;
+            opacity: 0.7;
+            transform: rotateX(-90deg) translateZ(150px);
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="cube">
+            <div class="cube_face front">front</div>
+            <div class="cube_face back">back</div>
+            <div class="cube_face right">right</div>
+            <div class="cube_face left">left</div>
+            <div class="cube_face top">top</div>
+            <div class="cube_face bottom">bottom</div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

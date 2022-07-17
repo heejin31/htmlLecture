@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디스플레이 속성</title>
+    <style>
+        /*
+        태그들이 가지고 있는 inline이나 block 속성을
+        css로 변경할 수 있는 속성
+        *화면상에서 보여지는 값을 변경하는 것이지 태그가 가지고 있는 본질은 변하지 않는다.
+
+        inline-block: inline 요소의 컨텐츠를 나열하는 속성과 block요소의 영역을 생성하는 속성의 특징을 모두 가지고 있는 속성
+        주로 block 속성의 컨텐츠를 좌우로 나열할떄 사용하는 기초적인 정렬 방법중의 하나
+
+        none : 화면상에서 태그를 출력하지 않음
+        출력되지 않기 때문에 영역에 영향을 주지 않는다.
+
+        * opscity는 투명도만 조절하기 때문에 영역은 남아 있다.
+        
+
+
+
+        
+        
+        */
+
+        div.box{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            /*display: inline-block;*/
+            opacity: 0;
+
+        }
+
+        div.box02{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            display: inline-block;
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class = "box">box</div>
+      
+
+    <div class = "box02">box02</div>
+        
+    
+</body>
+</html>

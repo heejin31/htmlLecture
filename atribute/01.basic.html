@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 연습</title>
+
+    <style>
+     /*
+     여백
+     컨텐츠를 기준으로 안쪽여백과 바깥쪽여백으로 구분할 수 있다.
+
+     바깥쪽여백 = margin
+     주로 컨텐츠와 컨텐츠 사이 의 여백을 생성할 때 사용한다.
+     영역에 포함되지 않는다.
+
+     안쪽여백 = padding
+     주로 컨텐츠 내부에서 여백이 필요할때 설정한다.
+     영역에 여백값이 추가된다.
+
+     padding 처리방법
+     1. 영역값을 넣을 때 padding 값을 미리 제외
+        정확한 사이즈의 계산이 필요하면 번거로워서 잘사용하지 않는다.
+
+     2. css에 box-sizing:border-box를 추가하는 방법
+
+
+
+    
+
+     */
+
+     div.box{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin-bottom: 50px;
+        padding-top: 50px;
+        box-sizing: border-box;
+
+
+     }
+
+     div.box02{
+         width: 100px;
+         height: 100px;
+         background-color: aquamarine;
+        
+     }
+
+     span{
+        background-color: coral;
+        padding-top: 50px;
+        padding-left: 50px;
+        
+
+     }
+
+    </style>
+
+
+</head>
+<body>
+  <div class="box">
+       box
+  </div>
+
+  <div class="box02">
+    box02
+  </div>
+
+  <span> span입니다.</span>
+
+
+
+    
+</body>
+</html>

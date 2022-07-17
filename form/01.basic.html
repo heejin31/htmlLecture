@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 태그(form)</title>
+    <style>
+        textarea{
+            resize: none;
+            width: 500px;
+            height: 300px;
+        }
+        /* textarea는 사이즈를 조절할 수 있는 커서가 존재한다. 레이아웃을 방해할 요인이 있기 때문에 사이즈는 직접 설정하고 사용자가
+        resize 를 하지 못하도록 사용하지 않음으로 설정한다. */
+    </style>
+
+
+
+</head>
+<body>
+    <!--form 요소
+    사용자 입력을 위한 다양한 방식의 입력 폼을 제공하는 태그로 서버에 입력된 값을 보내는 역할을 한다.
+
+    데이터를 전송하거나 받아야 하기 때문에 항상 form태그로 감싸고 시작을 해야한다.
+
+    form태그에 들어가는 속성
+    css가 아니므로 직접 입력할것
+    * - action 실행 어플리케이션의 주소를 지정(중요)
+    입력된 값은 서버 또는 프로그램 주소이다.
+    이곳으로 데이터를 전송하려면 브라우저가 전송 위치를 알아야 하기 떄문에 필수적으로 들어간다.
+    
+    *- method :
+    -get : 전송되는 값을 암호화하지 않는다.( 비밀번호 아이디 그대로 노출)
+    암호화가 되지 않기 때문에 post에 비해 보안에 취약하다.
+    한번에 전송되는 데이터의 양이 제한적이다.
+
+    -post : get에 비해 보안성이 좋으며 한번에 전송되는 데이터의 양이 상대적으로 많다.
+    
+    *- name : 입력 속성 태그에 id와 class처럼 이름을 부여한다. css를 주지는 못하며 스크립트에서 요소를 참조할 때 사용한다.
+              form 요소에만 사용함
+
+
+    - accept-charset : 문자를 인코딩하지 못하는 경우에 선언하여 사용한다.
+     novalidate : html5에서 새로 생긴 속성으로 유효성 체크를 하는 속성 값이 없으면 유효성 체크를 한다. 
+                                                                   값이 있으면 유효성 체크를 하지 않는다.
+ 
+    novalidate ="novalidate" 처럼 속성과 속성값이 서로 같은 경우 값을 생략해도 속성이 적용된다.
+  
+    form태그 안에 들어가는 전용태그들
+
+    fieldset = 입력요소들을 구분지어서 그루핑해주는 태그
+    간단한 구조나 그룹을 나눌 필요가 없으면 생략해도 된다.(선택요소)
+    
+    * fieldset으로 그룹을 나눴다면 반드시 legend로 각 fieldset의 제목을 넣어줘야 한다.
+    
+    input
+    -데이터를 입력하는 가장 기본적인 태그
+    type의 속성에 따라 용도나 형태가 바뀌게 된다.
+    type의 종류
+    1. text : 일반적인 텍스트를 입력할 수 있는 타입
+    2. password : 텍스트를 암호화하여 출력하는 타입
+    3. number : 숫자만 입력 가능한 텍스트 타입이며 직접 숫자를 입력하거나 오른쪽 끝에 스피너버튼을 통해서 숫자를 조절할수도 있다.
+    4. color : 컬러를 지정할 수있는 colorpicker창이 활성화된다.(ie미지원, 파폭 미지원, 사파리 미지원)
+    5. date : 날짜를 선택할 수 있는 type창 달력을 클릭하면 날짜를 선택할 수 있는 창이 생성된다.(html5 전용)
+              datetime, fatetime-local은 호환되지 않는다.
+    6. email :이메일 주소를 입력하는 입력창
+              이메일 주소 유효성을 체크함 (@) 조건을 만족하지 못하면 경고창을 출력하며 데이터를 전송하지 않는다.
+    7. submit : 데이터 전송 버튼
+    8. reset : 작성된 내용을 초기화 하는 버튼
+    9. range : 사용자가 일정 범위안에 값을 선택할 수 있는 범위 슬라이더를 생성한다.
+               사용자가 선택할 수 있는 범위를 지정해주는 것이 포인트
+               min과 max로 최소와 최대범위를 선택
+
+
+      value : 서버에 전송되는 데이터 값
+      value 가 생략되어 있다면 해당 영역에 생성된 텍스트가 대신 전송된다.
+      버튼타입에 적용할 경우 출력 텍스트가 된다.
+
+      minlength : 최소글자수(유효성검사)
+      maxlength : 최대글자수
+      size : 영역값( width 나 heigth가 아닌 글자수에 따라 사이즈가 바뀐다. 기본값은 size="20"이다.)
+      width처럼 정확한 값을 파악하기 힘들기 때문에 잘 사용하지 않으며 width와 섞어서도 사용하지 않는다.
+      
+      required : 필수입력요소를 변환(유효성 검사)
+      disabled : 사용자가 임의대로 값을 입력하지 못하도록 lock을 걸어버리는 용도.
+                 특정 행동이후에 값을 입력하는 용도로 사용(예: 주소검색후 검색된주소 입력됨)
+      readonly : 읽기전용으로 변환
+      disabled와는 다르게 입력된 텍스트를 긁어올 수 있지만 수정할 수 없다.
+
+      disabled와 readonly 의 가장 큰 차이점은 입력된 값을 서버로 전송시키냐 안시키냐의 차이이다. 
+      disabled= 전송안보냄
+      readonly= 전송함
+
+
+
+
+    10. checkbox : 중복으로 선택 가능한 체크박스 형태로서 name으로 그룹을 설정한다.
+    11. radio : 체크박스의 형태로 하나의 name안에 하나의 선택만 할 수 있다.
+    
+    * radio 와 checkbox는 checked라는 속성으로 미리 체크해놓을 수 있다.
+
+    12. file : 파일업로드 버튼
+    13. hidden : 사용자가 직접 사용할 수 없는 숨겨져 있는 입력창이 생성된다. 실제로 출력되는 요소가 아니기 때문에 데이터를 전송하거나
+    받는 용도로 사용하는 곳이다. 검색창 분류같은 것들이나 데이터를 계산하기 위한 값들을 처리하기 위해 생성한다.
+
+
+  type 외에 사용되는 태그들
+  1. select : 선택창을 설정할 수 있는 폼 요소, 창을 클릭하면 해당하는 리스트들이 드롭다운되어 펼쳐짐
+  *multiple : 기본적으로 select는 하나만 선택할 수 있지만 multiple을 선택할 경우 다중 선택할 수 있다.
+  size 속성은 한번에 보여지는 option의 갯수를 설정한다.
+               
+
+
+    
+
+    브라우저별 지원현황 확인 사이트
+    caniuse
+
+
+
+
+
+     
+
+    -->
+
+
+    <form action="#" method="post"name="login" >
+        <fieldset>
+           <legend>필수 입력 요소</legend>
+           <input type="text" minlength= "5" maxlength="10" placeholder="값을 입력하세요"> <!--placeorder : 흐리게 표시되어 값을 입력하면 사라짐-->
+           <input type="password" size="50" required> 
+           <input type="number" disabled>
+           <input type="color">
+           <input type="date">
+           <input type="email">
+           <input type="submit">
+           <input type="reset">
+           <input type="range" min="5" max="10">
+           <input type="button"value="버튼">
+
+           <input type="text" disabled>
+           <input type="tel" readonly>
+           
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>선택 입력 요소</legend>
+            <input type="radio" name="number" value="1">1번
+            <input type="radio" name="number">2번
+            <input type="radio" name="number">3번
+            <input type="radio" name="number">4번
+
+
+            <input type="checkbox">1번
+            <input type="checkbox">2번
+            <input type="checkbox">3번
+            <input type="checkbox">4번
+
+            <input type="radio" name="gender" value="man">남자
+            <input type="radio" name="gender" value="woman" checked>여자
+
+            <input type="file">
+            <input type="hidden">
+
+
+
+         </fieldset>
+
+         <fieldset>
+            <legend>select</legend>
+            <select multiple size="3">
+                <option value="1">선택1</option>
+                <option value="2">선택2</option>
+                <option value="3">선택3</option>
+                <option value="4">선택4</option>
+                <option value="5">선택5</option>
+                
+
+
+
+            </select>
+            <select>
+                <optgroup>
+                    <option>1번</option>
+                    <option>1번</option>
+                </optgroup>
+                <optgroup>
+                    <option>2번</option>
+                    <option>2번</option>
+                </optgroup>
+
+                <optgroup>
+                    <option>3번</option>
+                    <option>3번</option>
+                </optgroup>
+            </select>
+
+         </fieldset>
+
+         <progress value="60" max="100"></progress> 
+         <textarea></textarea>
+
+       <fieldset>
+
+        <label for="text">아이디</label>
+        <input id="text" type="text">
+
+        <label for="radio">버튼</label>
+        <input id="radio" type="radio">
+
+        <label>버튼<input type="radio"></label>
+       
+
+       </fieldset>
+
+
+    </form>
+</body>
+</html>

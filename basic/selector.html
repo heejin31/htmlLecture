@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="kp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        /*
+        선택자는 대상을 자세하게 지칭할수록 정확도와 우선순위가 올라간다.
+        
+        선택자의 종류
+        *  =  모든 태그를 선택, 우선순위 떨어짐
+              사용하지 않는 태그도 같이 선택하기 때문에 사양이 낮다면 버벅임의 문제가 생길수도 있다.
+
+        선택자 , 선택자{} = 두 개 이상의 여러 선택자를 동시 선택
+          예) div,p{} 한번에 여러 태그에 하나의 값이 들어갈 경우 관리가 용이하도록 한번에 선택하는 방법
+        
+        선택자  선택자 = 앞에 작성된 선택자의 하위 선택자를 선택할 때
+          (자식, 자손을 모두 포함)
+
+        선택자 > 선택자 = 앞에 작성된 선택자의 바로 아래 있는 하위 선택자(자식)  
+
+        id를 선택자로 만들경우[100점] > class [10점] > 태그명[1점] > *[0점]
+
+        p#text = 태그1점 + 아이디명 100점 =101점
+        #text = 아이디명 100점
+
+        점수가 같은 경우 가장 나중에 작성된 css가 최종 적용된다.
+        
+
+        
+        */
+
+
+        *{
+            color: blue;
+
+        }
+
+        div, p{
+            color: aqua;
+
+        }
+
+        p span{
+            color: red;
+
+        }
+
+        p> span{
+            color: green;
+
+        }
+    </style>
+</head>
+<body>
+    <div> div 태그입니다.</div>
+    <div> div 태그입니다.</div>
+    <div> div 태그입니다.</div>
+    <div> div 태그입니다.</div>
+    <div> div 태그입니다.</div>
+
+    <p> p 태그입니다.</p>
+    <p> p 태그입니다.</p>
+    <p> p 태그입니다.</p>
+    <p> p 태그입니다.</p>
+
+    <span> span 태그입니다.</span>
+    <span> span 태그입니다.</span>
+    <span> span 태그입니다.</span>
+    <span> span 태그입니다.</span>
+
+
+    <p>  저는
+        <span> span 태그
+              <span>입니다.</span>
+        </span>
+
+    </p>
+
+
+
+
+
+</body>
+</html>

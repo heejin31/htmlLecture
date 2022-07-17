@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리스트 요소</title>
+
+    <style>
+        /*
+        대부분의 태그들은 기본 속성을 가지고 태어난다.
+        태그의 목적마다 조금씩 다른 스타일을 가지고 있지만 대표적으로 여백요소는 대부분이 가지고 있는 스타일이다.
+        이 기본 스타일들은 레이아웃을 설정할 때 방해요인이 될 수도 있기 때문에 아예 없애고 시작하는게 레이아웃 설정이 쉬워진다.
+        (검색창에 reset.css 라고 검색하여 검색되는것 사용가능)
+
+        
+        
+        */
+
+        html, body, p, div, ul, ol, li{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        ul, ol{
+            list-style: none;
+            margin: 0px 20px;
+
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <!--
+        큰 주제안에 여러개의 목록들이 존재할 때 사용하는 태그
+
+        리스트의 종류
+        -순서를 요구하는 목록을 작성할 때 orderList(ol)
+        -순서를 요구하지 않는 목록을 작성할 때  unorderList(ul)
+
+        ol과 ul의 자식요소에는 반드시 list Item(li)만 올 수 있다.  그 외 태그는 li안에서만 작성할 수 있다.
+        ol과 ul에는 반드시 하나 이상의 li가 있어야 한다.
+
+        하나의 내용을 정의하는 태그 : description list (dl)
+        dl자식요소로는
+        dt(description term)와
+        dd(desciption detail): 여러개 와도 상관없다 
+        그리고 div만 올 수 있다.
+        다만 div는 dt와 dd의 형제요소로는 올 수 없다.(dt, dd와 나란히 올 수 없다, 감싸는 용도로만 사용가능)
+        dd가 dt의 앞에 올 수는 없다.
+        
+
+
+    -->
+
+    <OL>
+        <li>목록1번</li>
+        <li>목록2번</li>
+        <li>목록3번</li>
+        <li>목록4번</li>
+    </OL>
+
+    <ul>
+        <li>목록1번</li>
+        <li>목록2번</li>
+        <li>목록3번</li>
+        <li>목록4번</li>
+    </ul>
+    
+    <dl>
+        <dt>unorder list </dt>
+        <dd>순서를 가지지 않는 목록 태그</dd>
+        <dd>반드시 자식요소는 li만 올 수 있다.</dd>
+    </dl>
+
+</body>
+</html>

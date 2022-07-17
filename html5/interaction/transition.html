@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜지션</title>
+
+    <style>
+        /*
+        transition
+        선택된 개체의 css의 속성값이 변화가 진행되는 진행시간을 적용하는 css효과
+
+        transition은 단독적으로 실행할 수 없다.
+        이벤트 요소와 결합하여 사용자가 특정 행동(이벤트)을 했을 때 변화하는 css를 적용할때에 진행되는 시간을 넣어주는 역할을 한다.
+
+        transition 세부 속성
+         -property : transition 대상이 되는 css의 속성을 지정
+         속성이 많거나 단일 속성을 지칭할 수 없는 상황일때 all이라고 표시해도 된다.
+
+         -duration: transition이 진행되는 지속시간 (필수적인 요소)
+         단위는 초(s), 밀리세컨(ms)
+         1s =1000ms
+
+         -delay: transition 진행되기 전 지연시간
+         단위는 초(s), 밀리세컨(ms)
+
+         -timing-function : 진행시간안에서 시간의 굴곡의 줄 수 있는 시간 속도 변화 속성
+
+         linear : 처음부터 끝까지 일정한 속도를 유지         
+         ease-in: 느리게 시작-> 가속하면서 종료(기본값)
+         ease-out :  빠르게 시작->감속하면서 종료
+         ease : 느리게 시작 -> 가속-> 느리게 종료
+         ease-in-out : 느리게 시작 -> 가속 -> 느리게 종료
+         (ease보다 변화속도가 빠름)
+
+         cubic-bezier: 사용자가 직접 만든 시간 함수
+
+         transition 그룹속성
+         transition: property(생략가능) duration(생략안됨) delay(생략가능) function(생략가능)
+
+
+         
+
+
+
+
+        
+        */
+
+        div.box{
+            width: 300px;
+            height: 300px;
+            background: coral;
+            transition-property: all;
+            transition-duration: 500ms;
+            transition-delay:500ms;
+            transition-timing-function: linear;
+           /* transition: 500ms; */
+
+        }
+
+        div.box:hover{
+            background: pink;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        box
+
+    </div>
+    
+</body>
+</html>
