@@ -1,0 +1,52 @@
+https://lynmp.com/en/article/ms811c9dc50j
+
+https://www.websiteplanet.com/ko/webtools/jscssminifier/
+
+10:32:53 발신자 김수헌 수신자 이희진(DM):
+	header{	    .inner{color:red;	        	        h1{color:red;	            a{color:red;		            }	        }	       	        ul.gnb{color:red;	            li{color:red;	                h2{color:red;	                    a{color:red;		                    }	                }	                ul.gnbsub{color:red;	                    li{color:red;	                        a{color:red;		                        }	                    }	                }	            }	        }	    }	   	}
+10:32:58 발신자 김수헌 수신자 이희진(DM):
+	header.scss
+10:41:05 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	비주얼 스튜디오 코드 VSC, 코드 경량화 minify - https://gogogameboy.tistory.com/114
+11:32:25 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	https://studiomeal.com/archives/197
+11:43:01 발신자 최정원 수신자 모두:
+	포토샵이 필요합니다...
+11:43:40 발신자 이희진 수신자 모두:
+	포토샵 저도 필요합니다...
+12:07:15 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="28.4px"		 viewBox="0 0 25 28.4" style="enable-background:new 0 0 25 28.4;" xml:space="preserve">	<style type="text/css">		.st0{fill:#636A52;}	</style>	<path class="st0" d="M12.5,26.7L1.6,20.4v-6.9l10.9-6.3l7.6,4.4l-2.9,1.7l-4.3-2.4c-0.2-0.1-0.6-0.1-0.8,0l-9.2,5.3		c-0.2,0.1-0.4,0.4-0.4,0.7l0,0c0,0.3,0.2,0.5,0.4,0.7l9.2,5.3c0.1,0.1,0.3,0.1,0.4,0.1s0.3,0,0.4-0.1l10.5-6.1v3.7L12.5,26.7z		 M9.4,14.3l3.1-1.8l3.1,1.7L12.5,16L9.4,14.3z M12.5,1.7L23.4,8v6.9l-10.9,6.3l-7.6-4.4l2.9-1.7l4.3,2.4c0.2,0.1,0.6,0.1,0.8,0		l9.2-5.3c0.2-0.1,0.4-0.4,0.4-0.7l0,0l0,0c0-0.3-0.1-0.5-0.4-0.7l-9.2-5.3c-0.2-0.1-0.6-0.1-0.8,0L1.6,11.6V7.9L12.5,1.7z M24.6,6.9		L12.9,0.1c-0.2-0.1-0.6-0.1-0.8,0L0.4,6.8C0.2,6.9,0,7.2,0,7.5V13l0,0v7.9c0,0.3,0.2,0.5,0.4,0.7l11.7,6.8c0.1,0.1,0.3,0.1,0.4,0.1		s0.3,0,0.4-0.1l11.7-6.7c0.2-0.1,0.4-0.4,0.4-0.7v-5.6l0,0V7.5C25,7.3,24.9,7,24.6,6.9"/>	</svg>
+12:08:16 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="28.4px"		 viewBox="0 0 25 28.4" style="enable-background:new 0 0 25 28.4;" xml:space="preserve">	<style type="text/css">		.st0{fill:#636A52;}	</style>	<path class="st0" d="M12.5,26.7L1.6,20.4v-6.9l10.9-6.3l7.6,4.4l-2.9,1.7l-4.3-2.4c-0.2-0.1-0.6-0.1-0.8,0l-9.2,5.3		c-0.2,0.1-0.4,0.4-0.4,0.7l0,0c0,0.3,0.2,0.5,0.4,0.7l9.2,5.3c0.1,0.1,0.3,0.1,0.4,0.1s0.3,0,0.4-0.1l10.5-6.1v3.7L12.5,26.7z		 M9.4,14.3l3.1-1.8l3.1,1.7L12.5,16L9.4,14.3z M12.5,1.7L23.4,8v6.9l-10.9,6.3l-7.6-4.4l2.9-1.7l4.3,2.4c0.2,0.1,0.6,0.1,0.8,0		l9.2-5.3c0.2-0.1,0.4-0.4,0.4-0.7l0,0l0,0c0-0.3-0.1-0.5-0.4-0.7l-9.2-5.3c-0.2-0.1-0.6-0.1-0.8,0L1.6,11.6V7.9L12.5,1.7z M24.6,6.9		L12.9,0.1c-0.2-0.1-0.6-0.1-0.8,0L0.4,6.8C0.2,6.9,0,7.2,0,7.5V13l0,0v7.9c0,0.3,0.2,0.5,0.4,0.7l11.7,6.8c0.1,0.1,0.3,0.1,0.4,0.1		s0.3,0,0.4-0.1l11.7-6.7c0.2-0.1,0.4-0.4,0.4-0.7v-5.6l0,0V7.5C25,7.3,24.9,7,24.6,6.9"/>	</svg>
+14:54:42 발신자 김수헌 수신자 이희진(DM):
+	<iframe class="video" src="https://player.vimeo.com/video/626348459?muted=1&autoplay=1&autopause=0&loop=1&background=1"></iframe>
+15:02:00 발신자 이희진 수신자 그린컴퓨터아카데미 강남(DM):
+	?
+15:06:37 발신자 이희진 수신자 그린컴퓨터아카데미 강남(DM):
+	?
+15:08:21 발신자 이희진 수신자 그린컴퓨터아카데미 강남(DM):
+	저도 동영상이 안나와요
+15:08:30 발신자 그린컴퓨터아카데미 강남 수신자 이희진(DM):
+	https://player.vimeo.com/video/626348459?muted=1&autoplay=1&autopause=0&loop=1&background=1
+15:13:25 발신자 이희진 수신자 그린컴퓨터아카데미 강남(DM):
+	선생님 저 화면 한번만 봐주세요 ... 부탁드립니다...
+15:18:18 발신자 이희진 수신자 그린컴퓨터아카데미 강남(DM):
+	149 186 134
+16:10:26 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	#title .inner a.scroll{	  position: absolute;	  right: -150px;	  bottom: 40px;	  font-size:20px; 	}	#title .inner a.scroll::before{	  content: "";	  width: 15px;	  height: 15px;	  display: block;	  position: absolute;	  top: -10px;	  border: 1px solid;	  border-left: transparent;	  border-top: transparent;	  transform: translateX(15px) translateY(-10px) rotate(45deg);	  color: #666;	}	#title .inner a.scroll::after{	  content: "";	  width: 15px;	  height: 15px;	  display: block;	  position: absolute;	  top: -20px;	  border: 1px solid;	  border-left: transparent;	  border-top: transparent;	  transform: translateX(15px) translateY(-10px) rotate(45deg);	  color: #999;	}
+
+
+
+display:표시, 나타냄
+
+::before{
+content:"";
+width:10px;
+height:10px;
+position:absolute;
+}
+
+right:calc((100% - 1400px) / 4)
+
+
+span 인라인 태그(a태그) 묶어줄때

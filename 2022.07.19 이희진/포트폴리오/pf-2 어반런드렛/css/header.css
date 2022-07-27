@@ -1,0 +1,92 @@
+header {  
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+header a{
+  color: #fff;
+}
+header .inner {  
+  height: 100px;
+  padding-top: 45px;
+  align-items: flex-end;
+}
+header .inner h1 {  
+  /*! position: absolute; */
+  /*! left: calc(50% - 100px); */
+  /*! width: 200px; */
+  /*! text-align: center; */
+  order: 2;
+  /*! align-self: flex-start; */ /*글씨와 메뉴의 아랫부분 위치 맞추기*/
+}
+header.inner.wgnb{
+  order: 1;
+  
+  
+}
+
+header .inner .wgnb a.ham{
+  font-size: 0;
+  width: 36px;
+  height: 36px;
+  display: block;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  box-sizing: border-box; 
+  display: flex;
+  align-items: center;
+}
+
+header .inner .wgnb a.ham::before{
+  content: "";  
+  display: block;
+  height: 3px;
+  background-color: white;
+  /*width: 100%;*/
+  flex-grow: 1; /*width100%와 같은뜻으로 사용 1보다크면 빈공간을 메움/플렉스 적용받은 자식에게 사용*/
+}
+header .inner h1 a {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+}
+
+header .inner h1 a img{
+  display: block;
+  /*! margin-bottom: 10px; */ /* 그림과 글자사이를 띄우기 위한 명령어이나 다른대상에 영향을 줌:글자가 아래로 내려가서 다른부분에 영향을 줌*/
+  transform: translateY(-12px); /*그림과 글자사이를 띄우기 위한 명령어이나 다른대상에 영향을 주지않음:그림이 위로 올라가서 다른부분에 영향을 주지않음*/
+  filter: brightness(100);
+}
+header .inner ul.gnb {
+
+}
+header .inner ul.gnb li {
+  
+}
+header .inner ul.gnb li h2 {
+  
+}
+header .inner ul.gnb li h2 a {
+  
+}
+header .inner ul.gnb li ul.gnbsub {
+  
+}
+header .inner ul.gnb li ul.gnbsub li {
+  
+}
+header .inner ul.gnb li ul.gnbsub li a {
+  
+}
+
+header .inner .enb{
+  order: 3;
+  
+}
+
+header .inner ul li a{
+  color: black;
+  
+}

@@ -1,0 +1,148 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+header{
+  
+  /*! position: fixed; */
+  width: 100%;
+  z-index: 2; /* 타이틀 포지션을 나중에 입력하여 우선순위가 타이틀포지션으로 가서 이 옵션을 넣어주어 포지션이 겹치지않게 함*/
+}
+
+header::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 1px solid #ccc;
+  left: 0;
+  top: 27px;  
+  z-index: 1;
+}
+
+header div.inner {/*하위선택자*/
+  /*! width: 95%; */
+  /*! margin: 0 auto; */    
+  display: flex;
+  justify-content: space-between;
+  /*! justify-content: space-around; */
+  height: 88px;
+  align-items: center;
+  position: relative;
+  /*! background-color: #eee; */
+  margin-top: 28px;
+}
+
+header .inner,
+header .inner>*{ /* >자식선택자를 의미 */
+  /* border: 1px solid #333;*/
+}
+
+header .inner {
+    
+  }
+  header .inner h1 {
+    
+  }
+  header .inner h1 a {
+    
+  background-image: url(../img/logo-pc.png);
+  width: 142px;
+  height: 35px;
+  display: block;
+  font-size: 0;
+  }
+  header .inner ul.gnb {    
+  display: flex;
+  /*! gap: 15px; */
+  }
+  header .inner ul.gnb li {
+    
+  }
+  header .inner ul.gnb li a {
+    
+  font-weight: 400;
+  padding: 20px 16px;
+  display: block;
+  /*! line-height: 3; */ /* 블럭에게만 적용되는 속성*/
+  }
+
+  header .inner ul.gnb li a:hover{
+    color: red;
+  
+  
+  }
+
+   
+  header .inner ul.enb {
+    display: flex;
+    gap: 15px;
+    
+  }
+  header .inner ul.enb li {
+    
+  }
+  header .inner ul.enb li select {
+    
+  background-color: transparent;
+  border: none;
+  }
+ header .inner ul.enb li select option{
+    
+  }
+header .inner ul.enb li a {
+    
+  font-size: 0;
+  width: 20px;
+  height: 13px;
+  display: block;
+  border-top: 3px solid #666;
+  border-bottom: 3px solid #666;
+  display: flex;
+  align-items: center;
+  }
+
+  header .inner ul.enb li a:hover{
+  border-color: red;
+  
+  }
+
+
+  header .inner ul.enb li a::before {
+    content: "";
+    /*! border-top: 3px solid #666; */
+    width: 100%;
+    display: block;
+    height: 3px;
+    background-color: #666;
+  }
+
+  header .inner ul.enb li a:hover::before{
+    background-color: red;
+  
+  }
+
+  header .inner ul.tnb {
+    
+   position: absolute;
+   right: 0;
+   top: -20px;
+   font-size: 12px;
+   display: flex;
+   gap: 14px;
+  }
+header .inner ul.tnb li{
+    
+}
+header .inner ul.tnb li a {
+    
+}
+header .inner ul.tnb li a::after{
+  content: "";
+  
+    
+  background-image: url(../img/open_in_new.svg);
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background-size: contain;
+  vertical-align: -4px;
+}

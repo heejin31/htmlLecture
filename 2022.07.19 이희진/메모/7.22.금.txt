@@ -1,0 +1,101 @@
+10:00:29 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	줌회의ID 488 808 6162		https://anydesk.com/ko/downloads/windows	section#community>div.inner>h2.hide+(article*2>h3+p+a)+div>(article>h3+ul)+article*2>h3+p+a
+10:32:26 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	전화걸기 링크 https://www.everdevel.com/HTML/mobile-atag-tel/
+10:32:42 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	https://xorms0707.tistory.com/57
+10:53:14 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	#community{color:111;	    .inner{color:111;	        h2{color:111;	            	        }	        >article{color:111;	            h3{color:111;	                	            }	            p{color:111;	                	            }	            >a{color:111;	                	            }	            &.cyber{color:111;	                	            }	            &.sinmungo{color:111;	                	            }	        }	        div{	            article{color:111;	                h3{color:111;	                    	                }	                ul{color:111;	                    li{color:111;	                        a{color:111;	                            	                        }	                    }	                }	                p{color:111;	                    	                }	                >a{color:111;	                    	                }	            }	        }	    }	}
+11:04:58 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	/* 커뮤니티 */	#community {	  	}	#community .inner {	  	}	#community .inner h2 {	  	}	#community .inner > article {	  	}	#community .inner > article.cyber {	  	}	#community .inner > article.sinmungo {	  	}	#community .inner > article h3 {	  	}	#community .inner > article p {	  	}	#community .inner > article > a {	  	}	#community .inner div article {	  	}	#community .inner div article.faq {	  	}	#community .inner div article.email {	  	}	#community .inner div article.telephone {	  	}	#community .inner div article h3 {	  	}	#community .inner div article ul {	  	}	#community .inner div article ul li {	  	}	#community .inner div article ul li a {	  	}	#community .inner div article p {	  	}	#community .inner div article > a {	  	}
+11:10:55 발신자 손동형 수신자 모두:
+	컨텐츠 정렬 (ex 가운데 정렬이나 원하는 위치에 옮기는 것) 하는 방법 간단하게 훑어주세요 (텍스트나 내용, 영역 등등 방법이 달라서 헷갈릴 때가 많아요) 8교시때 해주셔도 좋습니다
+11:43:03 발신자 최정원 수신자 모두:
+	저도 동의요 헷갈려요ㅜ
+12:56:32 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	타이포그래픽 줄간격	https://brunch.co.kr/@thinkaboutlove/291
+17:13:42 발신자 이희진 수신자 그린컴퓨터아카데미 강남(DM):
+	선생님 제 화면 한번만 봐주세요 ㅠㅠ
+17:46:39 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	https://namu.wiki/w/%EC%99%84%EC%84%B1%ED%98%95/%ED%8A%B9%EC%88%98%20%EB%AC%B8%EC%9E%90
+18:17:48 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	background-origin / 배경 이미지를 어느 영역부터 채워나갈지를 정하는 속성 https://www.codingfactory.net/10592
+
+<개인필기내용>
+section#>div>(article*2>h3+p+a)+div>article*3>h3+
+
+section#community>div.inner>h2.hide+(article*2>h3+p+a)+div>(article>h3+ul)+article*2>h3+p+a
+section#community>div.inner>h2.hide+(article*2>h3+p+a)+div>(article>h3+ul)+article*2>h3+p+a
+
+
+원하는구간 드래그 후 ctrl h 일괄변경가능 
+
+#community{color:111;
+    .inner{color:111;
+        h2{color:111;
+            
+        }
+        >article{color:111;
+            &.cyber{color:111;
+                
+            }
+            &.sinmungo{color:111;
+                
+            }
+            h3{color:111;
+                
+            }
+            p{color:111;
+                
+            }
+            >a{color:111;
+                
+            }
+        }
+        >article{color:111;
+            &.faq{color:111;
+                
+            }
+            &.email{color:111;
+                
+            }
+            &.telphone{color:111;
+                
+            }
+            h3{color:111;
+                ul{color:111;
+                    li{color:111;
+                        a{color:111;
+                            
+                        }
+                    }
+                }
+                p{color:111;
+                    
+                }
+                >a{color:111;
+                    
+                }
+            }
+        }
+        
+    }
+}
+
+
+margin 내용이 이동됨
+padding 상자면적넓어짐 내용은 이동되지않음
+line-height 줄높이 숫자만 들어가고 단위안들어감 *2
+위아래 간격 동일하게 조절할떄 사용
+
+height:80PX일때 line-height:80px; text-align:center;이면 글자가 정중앙에 배치된다(높이가 같아서)*한줄일때만 적용가능
+두줄이상 정렬시 display:flex; text-align:center;사용해서 가운데 정렬할 수 있다.
+
+너비값에 패딩값포함:box-sizing
+
+서울  (부모)             -   부산가는 자동차
+position:relative     position:absolute
+
+gap부모에게 줘서 자식요소들을 조절할때(플렉스와 같이사용)
+padding은 각요소들에게 줌
+

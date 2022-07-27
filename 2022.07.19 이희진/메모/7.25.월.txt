@@ -1,0 +1,85 @@
+vertical align:인라인요소를 수직정렬할때 사용(한줄에 배치시 높낮이를 변경할때)
+span:인라인 태그를 묶어주는 태그
+
+부가기능및테마-플러그인-absolutely 검색-Absolute Enable Right Click & Copy 설치-오른쪽상단 화살표 아이콘클릭-
+enable copy absolute mode 체크 후 활성화
+: 마우스 오른쪽 활성화가능
+
+footer>div.inner>div.left+div.right
+footer>div.inner>(div.left>h1+address+p)+div.right>ul+div
+
+footer>div.inner>(div.left>(h1>a)+address+p.copyright)+div.right
+>(ul.personal>li*2>a)+div.bottom>(ul.sns>li*3>a)+ul.banner>li*2>a
+
+
+footer{
+    .inner{
+        >div{
+            
+        }
+        .left{
+            h1{
+                a{
+                    
+                }
+            }
+            address{
+                
+            }
+            p.copyrighy{
+                
+            }
+        }
+        .right{
+            ul.personal{
+                li{
+                    a{
+                        
+                    }
+                }
+            }
+            .bottom{
+                ul.sns{
+                    li{
+                        a{
+                            
+                        }
+                    }
+                }
+                >a{
+                    
+                }
+            }
+        }
+    }
+}
+
+footer 로고 이미지는 p태그,img태그 등으로 쓰는데 어떤 태그가 제일 바람직한가
+1.h1>a>img 로고를 이미지태그처리
+2.h1>a로 로고를 텍스트 입력후 스타일에서 배경이미지로 처리
+
+<채팅>
+09:59:05 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	타이포그래픽 줄간격	https://brunch.co.kr/@thinkaboutlove/291
+11:04:01 발신자 이희진 수신자 그린컴퓨터아카데미 강남(DM):
+	?
+11:50:42 발신자 이희진 수신자 그린컴퓨터아카데미 강남(DM):
+	O
+12:07:58 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	footer>div.inner>(div.left>(h1>a)+address+p.copyrighy)+div.right>(ul.personal>li*2>a)+div.bottom>(ul.sns>li*3>a)+ul.banner>li*2>a
+14:06:18 발신자 그린컴퓨터아카데미 강남 수신자 이희진(DM):
+	https://anydesk.com/ko
+14:07:14 발신자 이희진 수신자 그린컴퓨터아카데미 강남(DM):
+	149 186 134
+14:37:11 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	https://ionic.io/ionicons
+14:46:05 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	svg		https://a11y.gitbook.io/graphics-aria/svg-graphics
+16:49:05 발신자 이혜인 수신자 모두:
+	o
+16:49:11 발신자 이희진 수신자 그린컴퓨터아카데미 강남(DM):
+	ㅇ
+17:07:19 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	css filter			https://ossam5.tistory.com/249
+18:16:16 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	header div.inner{ /* 하위선택자  */	  display: flex;	  justify-content: space-between;	  height: 88px;	  align-items: center;	  position: relative;	  margin-top: 28px;	}		header .inner,	header .inner>*{ /* > 자식선택자를 의미 */	/*! border: 1px solid #333; */	}	header .inner {	    	  }	  header .inner h1 {	    	  }	  header .inner h1 a {	  background-image: url(../img/logo-pc.png);	  width: 142px;	  height: 35px;	  display: block;	  font-size: 0;	  /*! padding: 20px 0; */	  }		  header .inner ul.gnb {	  display: flex;	  /*! gap: 15px; */	  align-self: flex-start;	  }	  header .inner ul.gnb>li {	    	  }	  header .inner ul.gnb>li>h2 a {	  font-weight: 400;	  padding: 20px 16px;	  display: block;	  /*! line-height: 3; */ /* 블럭에게만 적용되는 속성 */	  font-size: 20px;	  padding-top: 26.5px;	  }

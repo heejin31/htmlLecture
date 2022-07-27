@@ -1,0 +1,169 @@
+#title {
+  height: 100%;
+  background-image: url(../img/section01_bg.png);
+  background-size: cover;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*! height: 700px; */
+  min-height: 700px;
+  position: relative;
+  
+  }
+
+#title::before {
+  content: "";
+  background-image:url(../img/sec01_logo.png);
+  background-size: cover; 
+  width: 1508px;
+  height: 388px;
+  margin-top: 60px;
+  animation-name: fadeIn;  /*애니메이션이름*/
+  animation-duration: 3s; /*애니메이션시간*/ 
+  animation-iteration-count: 3; /*애니메이션 반복횟수*/
+  /* animation-direction: alternate; */  /*애니메이션 진행방향:왔다갔다 */
+}
+
+@keyframes fadeIn{
+    0%{ /*애니메이션이 시작하는 처음상태*/
+    opacity: 0;
+    transform: scale(0.7);
+      }
+  50%{
+    transform: scale(1.2)
+  }
+  
+  100%{ /*애니메이션이 끝나는 마지막상태*/
+    opacity: 1;
+    transform: scale(1);
+      }
+    }
+
+#title form.search {
+    
+  width: 700px;
+  background-color: white;
+  height: 60px;
+  box-shadow: 2px 0px 10px #ccc;
+  border-radius: 30px 30px 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 38px;
+  box-sizing: border-box; /* 넓이700에 패딩값이 추가되지 않고 합해서 700이 되도록 조절해줌*/
+  position: relative;
+  animation-name: moveLeft;
+  animation-duration: 1s;
+  transform: translateX(70px);
+  animation-delay: 2s;  
+ /* animation-fill-mode: forwards; /*처음위치로 다시 돌아가지않고 움직인 자리에서 끝나도록 하게 해줌*/ */
+  animation-direction: alternate;  /*애니메이션 진행방향:왔다갔다 */
+  animation-iteration-count: 2;
+   
+ 
+  }
+@keyframes moveLeft{
+  0%{
+    transform: translateX(70px);
+    
+  }
+  100%{
+    transform: translateX(0%);
+       
+  }
+}
+
+  #title form.search::before{
+    content: "";   
+    background-image: url(../img/search-outline.svg);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+  }
+
+  #title form.search input {
+    
+  border: none;
+  /*위아래 공간이 생김 height대신 사용 높이의 2.2 */
+  line-height: 1.6;
+  box-sizing: border-box;
+  width: 500px;
+  }
+
+  #title form.search input:focus {/* ocus input 태그안에 커서를 위치시키는 행위*/
+    outline: none;
+    
+  
+  }
+  #title button {
+    
+    background-color: red;
+    border: none;
+    color: white;
+    width: 100px;
+    line-height: 2.2;/*위아래 공간이 생김 height대신 사용 높이의 2.2*/
+    border-radius: calc(29.3333px/2); /**/
+    cursor: pointer;
+    }
+
+  #title h2 {
+    
+  }
+
+  #title ul.hash {
+    
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    column-gap: 40px;
+    }
+
+  #title ul.hash li {
+    
+  }
+  #title ul.hash li a {
+    
+  }
+  #title ul.hash li a:hover{
+    color: yellowgreen;
+      
+  }
+
+#title span{
+  position: absolute;
+  bottom: 20px;    
+}
+
+#title span::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: 2px solid;
+  border-top: transparent; /* 투명도를 줘서 보이지 않게 함*/
+  border-left: transparent;
+  margin: 0 auto;
+  transform: rotate(45deg);
+  margin-bottom: 10px;  
+  animation-name: scroll;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite; 
+  
+}
+  
+@keyframes scroll{
+    0%{
+      transform:translateY(0%) rotate(45deg); /*rotate를 뒤에 추가하여 화살표방향이 계속 아래로 향하게 한다. 순서는 rotate가 뒤로 오게 입력할것 */     
+      }
+    100%{
+      transform: translateY(-15px) rotate(45deg);       
+        } 
+   }
+
+#title span::after{
+  content: "scroll";
+ }

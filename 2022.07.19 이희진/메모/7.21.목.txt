@@ -1,0 +1,44 @@
+11:35:17 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	/* 카멜케이스방식:첫자소문자로시작..다른단어첫자는 대문자로시작 */
+11:46:39 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	/* flex */	.flex{	  display: flex;	}	.flexBetween{	  justify-content: space-between;	}	.flexCenter{	  justify-content: center;	}	.flexColumn{	  flex-direction: column;	}	.flexAlignCenter{	  align-items: center;	}
+12:09:05 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	/* flex */	.flex{	  display: flex;	}	.flexBetween{	  justify-content: space-between;	}	.flexCenter{	  justify-content: center;	}	.flexColumn{	  flex-direction: column;	}	.flexAlignCenter{	  align-items: center;	}
+12:19:39 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	:not() https://webisfree.com/2015-11-13/[css]-not-%EC%84%A0%ED%83%9D%EC%9E%90-%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95
+12:59:37 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	https://studiomeal.com/archives/197
+14:34:34 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	https://codepen.io/
+14:48:55 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	css3 애니메이션 https://www.w3schools.com/css/css3_animations.asp
+15:16:39 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	CSS3 Animation(key frame)	https://webclub.tistory.com/482
+16:40:53 발신자 장세준 수신자 모두:
+	https://noonnu.cc/font_page/750
+16:41:16 발신자 박찬영 수신자 모두:
+	https://noonnu.cc/font_page/750
+18:03:52 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	설문입니다
+18:03:54 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	https://www.menti.com/w9rufz9kw7
+18:10:39 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	https://docs.google.com/spreadsheets/d/1efdFCCMiXJx4CerQDPPGbM7EAjIJfN7k6Gw6yGYTfPs/edit#gid=382867081
+
+
+section#shop>div.inner>h2.h2+ul.list>li*6>img+a
+
+줌채팅창 종료전 메모저장하기
+
+span: inline요소들을 묶어주는 의미없는 태그
+
+블럭을 주면 꽉차는게 원칙이지만 거기에 flex주게되면 블럭화되면서
+글씨만큼 속성을 가지게되어 꽉차지 않는다.
+
+
+
+{} 짝이 맞는지 잘 확인할것
+영어 오타확인할것
+띄어쓰기 확인할것
+
+

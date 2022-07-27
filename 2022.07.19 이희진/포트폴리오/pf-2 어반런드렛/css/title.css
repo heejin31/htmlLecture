@@ -1,0 +1,165 @@
+#title {
+  height: 100%;
+  background-color: #eee;
+  min-height: 480px;
+  position: relative;
+}
+#title::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  background-color: black;
+}
+#title .inner {
+  width: 80%;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  height: 100%;
+}
+
+
+#title .inner h2{
+  position: relative;
+  z-index: 1;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+#title .inner p{
+
+  position: relative;
+  z-index: 1;
+}
+#title .inner br{
+
+}
+#title .inner iframe{
+  width: 1188px;
+  height: 676px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+/*transform: scale(0.9);
+  transform-origin: 100% 100%; */
+}
+
+#title span.titleaside{  
+  position: absolute;
+  right: calc(20% / 4 - 82px); /*162px가 전체너비이므로 반*/
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  height: 500px;
+  justify-content: space-between;
+  width: 164px;
+}
+
+#title .titleaside a.campaign{
+/*   position: absolute; */
+/*   right: -100px; */
+/*   top: 40%; */
+/*   transform-origin: 0 100%; */
+/*   transform:  translateX(170px) rotate(90deg);  */  
+ transform: rotate(90deg) translateX(78px);
+}
+
+#title span.titleaside a.scroll{
+  position: relative;
+/*   right: -150px;
+     bottom: 40px;  */ /*스크롤 위치조정*/
+  font-size:13px; 
+  text-transform: uppercase;
+  animation-name: scrollcolor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes scrollcolor{
+  0%{
+    color: black;
+  }
+  100%{
+    color: yellow;
+  }
+  
+}
+
+
+#title span.titleaside a.scroll::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  top: -13px;
+  border: 1px solid;
+  border-left: transparent;
+  border-top: transparent;
+  transform:scale(0.5) translateY(-15px) rotate(45deg);
+  color: #666;
+  left: calc(50% - 7.5px); /*스크롤글자를 정중앙으로 맞추기위한 이동 글자넓이/2*/
+  animation-name: scrollani1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scrollani1{
+  0%{
+    opacity: 0;
+    
+  }
+  10%{
+    opacity: 0;
+  }
+    
+  20%{
+    opacity: 1;      
+  }
+    
+  
+  100%{
+    opacity: 0;
+    
+  }
+}
+#title span.titleaside a.scroll::after{
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  top: -22px;
+  border: 1px solid;
+  border-left: transparent;
+  border-top: transparent;
+  transform:scale(0.5) translateY(-15px) rotate(45deg);
+  color: #999;
+  left: calc(50% - 7.5px);
+  animation-name: scrollani2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scrollani2{
+  0%{
+    opacity: 0;
+    
+  }
+  10%{
+    opacity: 1;
+    
+  }
+  100%{
+    opacity: 0;
+    
+  }
+
+}
+
+
+
+
