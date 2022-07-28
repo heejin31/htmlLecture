@@ -5,7 +5,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;/*글자가 그림의 정중앙에 오게하기 위해 기준점을 end로 잡음*/
+  justify-content: flex-end;
 }
 #title::before{
   content: "";
@@ -30,7 +30,7 @@
   overflow: hidden;
 }
 #title .inner h2 span{
-  display: block; /* span은 인라인 요소이기 때문에 화면에 보이게 하려면 block요소를 줘야함 */
+  display: block;
   animation-name: h2up;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -53,7 +53,7 @@
   overflow: hidden;
 }
 #title .inner p span{
-  display: block; /* span은 인라인 요소이기 때문에 화면에 보이게 하려면 block요소를 줘야함 */
+  display: block;
   animation-name: pup;
   animation-duration: 1.3s;
   animation-fill-mode: forwards;
@@ -85,7 +85,7 @@
 }
 #title span.titleaside{
   position: absolute;
-  right: calc(20% / 4 - 82px); /*전체가로에서 화면가로를 뺀 넓이중 가운데 오게하기위해 /2나눔*/
+  right: calc(20% / 4 - 82px);
   bottom: 60px;
   display: flex;
   flex-direction: column;
@@ -178,6 +178,7 @@
     opacity: 0;
   }
 }
+
 
 
 

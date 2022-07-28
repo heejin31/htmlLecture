@@ -31,7 +31,7 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   color:transparent;
 }
 .inner {
- width:95%;
+ width:80%;
  margin:0 auto;
   
 }
@@ -52,6 +52,14 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   font-size: 31px;
   font-weight: 700;
   font-family: 'Binggrae';   
+  
+}
+
+.h4{
+  font-size: 30px;
+  font-weight:700;
+  
+  
   
 }
 
@@ -111,8 +119,13 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   
 }
 
-/* 버튼 */
+.padding100{
+  padding-top: 100px;
+  padding-bottom: 100px;
+   
+}
 
+/* 버튼 */
 .btn1{
   height: 40px;
   width: 130px;
@@ -124,4 +137,12 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   color: white;  
   
 }
+
+/*글자정렬*/
+.text-center{
+  text-align: center;
+  
+}
+
+
 

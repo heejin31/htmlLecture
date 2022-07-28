@@ -1,0 +1,42 @@
+#title {
+  height: 100%;
+  background-color: #eee;
+  min-height: 480px;
+  position: relative;
+}
+#title::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  background-color: black;
+}
+#title .inner {
+  width: 80%;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  height: 100%;
+}
+#title .inner h2{
+  position: relative;
+  z-index: 1;
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+#title .inner p{
+
+  position: relative;
+  z-index: 1;
+}
+#title .inner br{
+
+}
+#title .inner iframe{
+  width: 1188px;
+  height: 676px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

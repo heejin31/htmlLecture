@@ -50,3 +50,15 @@ right:calc((100% - 1400px) / 4)
 
 
 span 인라인 태그(a태그) 묶어줄때
+
+
+* vs code에서 sass 바로 만드는법
+
+1.vs code에서 sass 검색후 설치
+2.sass 만드려는 파일을 복사해서 111.sass로 생성하기
+3.111.sass 파일에 내용입력한후 아래 watching 누르기
+4. 111파일 확인
+
+
+
+

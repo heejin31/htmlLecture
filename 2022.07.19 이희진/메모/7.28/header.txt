@@ -11,7 +11,6 @@ header .inner {
   height: 100px;
   padding-top: 45px;
   align-items: flex-end;
-  width: 95%; /*전체영역은 80%지만 그보다 옆에 위치하게 하려고 95% 따로줌*/
 }
 header .inner h1 {  
   /*! position: absolute; */

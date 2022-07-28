@@ -1,0 +1,79 @@
+인라인태그들 잘 구분하기:인라인태그들을 쓸경우 나중에 block요소를 줘야함
+span 태그안에 span태그를 사용할수 없음
+https://developer.mozilla.org/ko/docs/Web/HTML/Inline_elements 인라인태그구분
+<a>/<br>/<button>/<data>/<i>/<iframe>/<img>/<inpuet>/<label>/<picture>
+<span>/<video> 대표적인 인라인태그들
+
+
+
+
+
+
+
+
+section>div>hgroup>div
+section#service>div.inner>hgroup>(h2+h3)>div>article*6
+section#service>div.inner>hgroup>(h2+h3)>div.contents>article*6>h4+p
+section#service>div.inner>(hgroup>h2.h5+h3.h2)>div.contents>(article*6>a>h4.h4+p.p)+a.more
+
+
+
+
+
+
+
+
+
+
+
+
+position: 
+absolute-혼자사용불가/ 상위의 기준점이 필요함(relative)///기준점을 주지않으면 문서를 기준으로 하기때문에 위치벗어남
+relative-레이아웃변화없음(다른애들에게 영향주지않음)///위치벗어나지않음
+
+
+
+
+
+
+
+
+
+
+10:18:58 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	overflow:hidden https://offbyone.tistory.com/296
+10:52:36 발신자 김수환 수신자 모두:
+	0
+10:52:38 발신자 이희진 수신자 그린컴퓨터아카데미 강남(DM):
+	o
+11:51:42 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	section#service>div.inner>(hgroup>h2.h5+h3.h2)+(div.contents>article*6>a>h4.h4+p.p)+a.more
+12:00:38 발신자 이훈재 수신자 모두:
+	감사합니다
+12:00:40 발신자 이훈재 수신자 모두:
+	O입니다
+12:00:45 발신자 이훈재 수신자 모두:
+	넹
+14:46:47 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	nth-child(n+3):nth-child(-n+6)	https://mylife365.tistory.com/252
+14:48:47 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	css 선택자 정리 nth-child	https://lalacode.tistory.com/6
+14:59:59 발신자 이혜인 수신자 모두:
+	o
+15:55:14 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	#service .inner .contents a.more {	  /*! width: 300px; */	  position: absolute;	  bottom: 30px;	  left: calc(50% - 50px);	  width: 100px;	  text-align: center;	  padding-right:40px	}	#service .inner .contents a.more::before{	  content: "";	  display:block;	  width:30px;	  height:2px;	  background-color:#333;	  position:absolute;	  right:0;	  top:calc(50% - 1px);	}	#service .inner .contents a.more::after{	  content: "";	  display:block;	  width:10px;	  height:10px;	  border: 2px solid #333;	  transform:rotate(45deg);	  border-bottom:transparent;	  border-left: transparent;	  position:absolute;	  right:0;	  top:calc(50% - 6px);	}
+16:17:30 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	http://ianlunn.github.io/Hover/
+16:29:13 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	<!-- LIFE ARCHIVE SPAC -->	        <section id="space">	            <div>	                <h2 class="h1">LIFE ARCHIVE SPACE.</h2>	            </div>	        </section>
+17:19:25 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	https://docs.google.com/spreadsheets/d/14L-xETR-x5ZA3XU5iyehbH2C_WyxbzgCYs_8iMzdQPI/edit#gid=1254037286
+17:43:45 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	background-origin https://devjhs.tistory.com/613
+18:06:00 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	온라인 svg	https://app.haikei.app/
+18:09:39 발신자 그린컴퓨터아카데미 강남 수신자 모두:
+	https://ldrerin.tistory.com/485
+
+
+

@@ -6,6 +6,10 @@ header .inner {
 }
 header .inner h1 {
   
+  position: absolute;
+  left: calc(50% - 100px); /*50px로 준 이유는 정가운데 오게하기위해 글자길이만큼 빼줌*/
+  width: 200px;
+  text-align: center;
 }
 header .inner h1 a {
   
