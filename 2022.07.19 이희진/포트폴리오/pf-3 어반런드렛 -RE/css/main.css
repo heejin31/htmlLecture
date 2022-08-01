@@ -1,0 +1,150 @@
+main{
+  
+  margin-left: 150px; /*수정*/
+  /*! padding-left: 150px; *//*수정*/
+}
+
+#service {
+  
+  /*! padding-bottom: 370px; */
+}
+#service .inner {
+  
+  padding-bottom: 500px;
+  position: relative; /*view more 포지션을 주기위한 명령*/
+}
+#service .inner hgroup {
+  
+}
+#service .inner hgroup h2 {
+  
+}
+#service .inner hgroup h3 {
+  
+  line-height: 2;
+}
+#service .inner .contents {
+  
+  flex-wrap: wrap;
+  row-gap: 150px;
+  margin-top: 60px;
+  column-gap: 50px; /*view more때문에 아랫줄 사진들은 간격이 좁아졌는데 그부분에 갭을 줘서 사이를 윗줄과 동일하게 맞추고 view more를 아래로 내림 */
+  /*! padding-bottom: 500px; */
+}
+#service .inner .contents article {
+  
+  width: calc(100% / 3 - 100px / 3);
+}
+
+#service .inner .contents article:nth-child(3n+1){ /*1번요소부터 3개마다 선택->1,4*/
+  transform: translateY(25%);
+ }
+
+#service .inner .contents article:nth-child(3n+2){ /*2번요소부터 3개마다 선택->2,5*/
+  transform: translateY(50%);  
+}
+
+#service .inner .contents article a {
+  
+}
+
+#service .inner .contents article a::before{
+  content: "";
+  width: 100%;
+  height: 595px;
+  display: block;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s;
+  box-sizing: border-box;
+  background-origin: border-box; /*border영역에도 배경이 나오게함*/
+  border: 0px solid rgba(0,255,0,0);
+  /*! padding: 100px; */
+  
+  
+  
+}
+
+#service .inner .contents article a:hover::before{
+  border: 50px solid #636a52;
+  
+  
+  
+}
+
+
+#service .inner .contents article:nth-child(1) a::before{
+    background-image: url(../img/main-service-01.jpg);
+  
+}
+#service .inner .contents article:nth-child(2) a::before{
+    background-image: url(../img/main-service-02-1.jpg);
+  
+}
+#service .inner .contents article:nth-child(3) a::before{
+    background-image: url(../img/main-service-03.jpg);
+  
+}
+#service .inner .contents article:nth-child(4) a::before{
+    background-image: url(../img/main-service-04.jpg);
+  
+}
+#service .inner .contents article:nth-child(5) a::before{
+    background-image: url(../img/main-service-05-1.jpg);
+  
+}
+#service .inner .contents article:nth-child(6) a::before{
+    background-image: url(../img/main-service-06.jpg);
+  
+}
+
+
+
+
+
+#service .inner .contents article a h4 {  
+  line-height: 1.5;
+  margin: 10px 0;
+}
+#service .inner .contents article a p {
+  
+  
+}
+
+#service .inner .contents article a p:nth-of-type(1){ /*타입으로 순서 매김: p태그중 1번째*/
+  color: #999;
+}
+
+
+#service .inner .contents a.more {
+  /*! width: 300px; */
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 50px); /*contents의 50%//%는 상위부모기준임*/
+  width: 100px;
+  text-align: center;
+  padding-right:40px
+}
+#service .inner .contents a.more::before{
+  content: "";
+  display:block;
+  width:30px;
+  height:2px;
+  background-color:#333;
+  position:absolute;
+  right:0;
+  top:calc(50% - 1px);
+}
+#service .inner .contents a.more::after{
+  content: "";
+  display:block;
+  width:10px;
+  height:10px;
+  border: 2px solid #333;
+  transform:rotate(45deg);
+  border-bottom:transparent;
+  border-left: transparent;
+  position:absolute;
+  right:0;
+  top:calc(50% - 6px);
+}

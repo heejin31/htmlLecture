@@ -1,6 +1,3 @@
-11:35:17 발신자 그린컴퓨터아카데미 강남 수신자 모두:
-	/* 카멜케이스방식:첫자소문자로시작..다른단어첫자는 대문자로시작 */
-11:46:39 발신자 그린컴퓨터아카데미 강남 수신자 모두:
 	/* flex */	.flex{	  display: flex;	}	.flexBetween{	  justify-content: space-between;	}	.flexCenter{	  justify-content: center;	}	.flexColumn{	  flex-direction: column;	}	.flexAlignCenter{	  align-items: center;	}
 12:09:05 발신자 그린컴퓨터아카데미 강남 수신자 모두:
 	/* flex */	.flex{	  display: flex;	}	.flexBetween{	  justify-content: space-between;	}	.flexCenter{	  justify-content: center;	}	.flexColumn{	  flex-direction: column;	}	.flexAlignCenter{	  align-items: center;	}
