@@ -1,0 +1,31 @@
+<svg  role="img"  aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg" width="296" height="296" viewBox="0 0 296 296" preserveAspectRatio="xMidYMid meet">
+
+  <title>파이 차트(Pie Chart)</title>
+  <desc>
+    전체 자료가 여러 개의 카테고리로 분류되어지는 경우,
+    개개의 카테고리를 전체에 대한 비율에 따라 원 내부의 면적을
+    분할한 파이(pie)모양의 도표를 말합니다.
+  </desc>
+
+  <defs>
+    <style>
+      .pie-l { fill:#00bcd4; }
+      .pie-tr { fill:#448aff; }
+      .pie-mr { fill:#3F51B5; }
+    </style>
+  </defs>
+
+  <g id="pie-chart">
+    <path
+      class="pie-l"
+      d="M29.098,28.786C27.821,30.146,26.012,31,24,31c-3.866,0-7-3.134-7-7c0-3.866,3.134-7,7-7V4
+      C13.002,4,4,13.002,4,24c0,10.998,9.002,20,20,20c5.777,0,10.998-2.444,14.557-6.332L29.098,28.786z" />
+    <path
+      class="pie-tr"
+      d="M24,4v13c3.866,0,7,3.134,7,7h13C44,13.002,34.998,4,24,4z" />
+    <path
+      class="pie-mr"
+      d="M31,24c0,2.232-1.048,4.216-2.676,5.497l8.009,10.226C40.995,36.062,44,30.387,44,24H31z" />
+  </g>
+
+</svg>

@@ -57,9 +57,7 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 .h4{
   font-size: 30px;
-  font-weight:700;
-  
-  
+  font-weight:700; 
   
 }
 
@@ -68,6 +66,7 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   display: flex;
   
 }
+
 .flexBetween{
   justify-content: space-between;
   
@@ -75,13 +74,11 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 .flexAround{
   justify-content: space-around;
-  
-  
+    
 }
 
 .flexEvenly{
-  justify-content: space-evenly;
-  
+  justify-content: space-evenly; 
 }
   
 .flexCenter{
@@ -143,6 +140,86 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   text-align: center;
   
 }
+
+/* 화살표 */
+
+.more {
+/*   width: 300px; */
+  position: relative;
+  /*! bottom: 30px; */
+  /*! left: calc(50% - 50px); */
+  width: 100px;
+  text-align: center;
+  padding-right: 40px;
+}
+
+.more::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #333;
+  transform: rotate(45deg);
+  border-bottom: transparent;
+  border-left: transparent;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 6px);
+}
+
+.more::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 1px);
+}
+
+/* 펜타곤 */
+
+.more span.pentagon{
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/logo.svg);
+  background-size: cover; /*배경지역을 완전히 덮지만 이미지의 일부가 안보일수도 있음*/
+  position: absolute;
+  right: -12px;
+  top: calc(50% - 13px); 
+/* display: none;  평소에는 안보이다가 마우스를 대는 hover를 쓸때 나타나게 할 예정 */
+  opacity: 0;
+  transition: all 0.3s;
+  
+}
+
+.more:hover span.pentagon{
+  display: block;
+  animation-name: moreRotate;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  animation-timing-function: linear;
+  opacity: 1;
+  
+  
+}
+
+
+@keyframes moreRotate{
+  0%{    
+    transform: rotate(0deg);    
+  }
+  
+  100%{    
+    transform: rotate(360deg);    
+  }
+  
+}
+
+
+
 
 
 

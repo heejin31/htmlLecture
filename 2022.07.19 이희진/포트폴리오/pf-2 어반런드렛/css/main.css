@@ -142,3 +142,56 @@
   right:0;
   top:calc(50% - 6px);
 }
+
+
+/* space*/
+#space{
+  position: relative;
+  padding: 250px 0 100px;
+}
+#space .inner{
+  height: 500px;
+  margin-left: 0;
+  /*! width: 90%; */
+  background-image: url(../img/main-space-01.jpg);
+  padding-left: 10%;
+  margin-bottom: 100px;
+}
+
+#space .inner h2{  
+  font-size: 197px;
+  /*! width: 124%; */
+  /*! transform: translateX(-181px); */
+  position: absolute;
+  left: 0;
+  width: 100%; /*앱솔루트가 지정되어있어서 사이즈 맞춰줌*/
+  top: 0;
+}
+
+#space .inner>*:not(h2){
+  color: white;  
+}
+
+#space .inner p{
+  
+  line-height: 1.2;
+  margin-bottom: 30px;
+  margin-top: 80px;
+}
+
+#space .inner a.more{
+  
+}
+
+#space .inner a.more::before{
+  background-color: white;
+    
+}
+
+
+
+
+#space .inner a.more::after{
+   border-color: white;
+   
+}
