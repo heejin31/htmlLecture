@@ -50,7 +50,7 @@ header .inner {
   /*! gap: 15px; */
   align-self: flex-start;
   }
-    header .inner ul.gnb::before{
+  header .inner ul.gnb::before{
   content: "";
   background-color: white;
   width: 105%;

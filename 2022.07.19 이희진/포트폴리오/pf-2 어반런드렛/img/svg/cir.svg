@@ -59,6 +59,12 @@
        rx="11.601562"
        ry="10.709134" />
   </g>
+  <svg>
+  <polyline
+    points="0,0 40,10 40,20 120,40 160,20 200,20 240,160" 
+    fill="none" stroke="#b38fac" stroke-width="6" />
+  </svg>
+
 </svg>
 <!-- <svg>
   <a

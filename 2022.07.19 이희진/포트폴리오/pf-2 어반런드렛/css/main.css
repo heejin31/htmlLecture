@@ -30,11 +30,11 @@
   width: calc(100% / 3 - 100px / 3);
 }
 
-#service .inner .contents article:nth-child(3n+1){ /*1번요소부터 3개마다 선택->1,4*/
+#service .inner .contents article:nth-child(3n+1) { /*1번요소부터 3개마다 선택->1,4*/
   transform: translateY(25%);
  }
 
-#service .inner .contents article:nth-child(3n+2){ /*2번요소부터 3개마다 선택->2,5*/
+#service .inner .contents article:nth-child(3n+2) { /*2번요소부터 3개마다 선택->2,5*/
   transform: translateY(50%);  
 }
 
@@ -42,7 +42,7 @@
   
 }
 
-#service .inner .contents article a::before{
+#service .inner .contents article a::before {
   content: "";
   width: 100%;
   height: 595px;
@@ -59,7 +59,7 @@
   
 }
 
-#service .inner .contents article a:hover::before{
+#service .inner .contents article a:hover::before {
   border: 50px solid #636a52;
   
   
@@ -67,27 +67,27 @@
 }
 
 
-#service .inner .contents article:nth-child(1) a::before{
+#service .inner .contents article:nth-child(1) a::before {
     background-image: url(../img/main-service-01.jpg);
   
 }
-#service .inner .contents article:nth-child(2) a::before{
+#service .inner .contents article:nth-child(2) a::before {
     background-image: url(../img/main-service-02-1.jpg);
   
 }
-#service .inner .contents article:nth-child(3) a::before{
+#service .inner .contents article:nth-child(3) a::before {
     background-image: url(../img/main-service-03.jpg);
   
 }
-#service .inner .contents article:nth-child(4) a::before{
+#service .inner .contents article:nth-child(4) a::before {
     background-image: url(../img/main-service-04.jpg);
   
 }
-#service .inner .contents article:nth-child(5) a::before{
+#service .inner .contents article:nth-child(5) a::before {
     background-image: url(../img/main-service-05-1.jpg);
   
 }
-#service .inner .contents article:nth-child(6) a::before{
+#service .inner .contents article:nth-child(6) a::before {
     background-image: url(../img/main-service-06.jpg);
   
 }
@@ -105,7 +105,7 @@
   
 }
 
-#service .inner .contents article a p:nth-of-type(1){ /*타입으로 순서 매김: p태그중 1번째*/
+#service .inner .contents article a p:nth-of-type(1) { /*타입으로 순서 매김: p태그중 1번째*/
   color: #999;
 }
 
@@ -119,7 +119,7 @@
   text-align: center;
   padding-right:40px
 }
-#service .inner .contents a.more::before{
+#service .inner .contents a.more::before {
   content: "";
   display:block;
   width:30px;
@@ -129,7 +129,7 @@
   right:0;
   top:calc(50% - 1px);
 }
-#service .inner .contents a.more::after{
+#service .inner .contents a.more::after {
   content: "";
   display:block;
   width:10px;
@@ -145,11 +145,11 @@
 
 
 /* space*/
-#space{
+#space {
   position: relative;
   padding: 250px 0 100px;
 }
-#space .inner{
+#space .inner {
   height: 500px;
   margin-left: 0;
   /*! width: 90%; */
@@ -158,8 +158,8 @@
   margin-bottom: 100px;
 }
 
-#space .inner h2{  
-  font-size: 197px;
+#space .inner h2 {   
+  font-size: 188px;
   /*! width: 124%; */
   /*! transform: translateX(-181px); */
   position: absolute;
@@ -168,30 +168,246 @@
   top: 0;
 }
 
-#space .inner>*:not(h2){
+#space .inner>*:not(h2) {
   color: white;  
 }
 
-#space .inner p{
+#space .inner p {
   
   line-height: 1.2;
   margin-bottom: 30px;
   margin-top: 80px;
 }
 
-#space .inner a.more{
+#space .inner a.more {
   
 }
 
-#space .inner a.more::before{
-  background-color: white;
-    
+#space .inner a.more::before { 
+  background-color: white;   
+}
+
+#space .inner a.more::after {
+   border-color: white;
+   
+}
+
+/* BRAND STORY */
+#story {
+  
+}
+#story div.inner {
+  
+}
+#story div.inner hgroup {  
+  margin-bottom: 100px;
+}
+#story div.inner hgroup h2 {
+  
+  color: #848484;
+}
+#story div.inner hgroup h3 {  
+  margin-bottom: 20px;
+  font-size: 50px;
+  line-height: 2;
+}
+#story div.inner hgroup h4 {  
+  line-height: 1.3;
+}
+#story div.inner hgroup h4 span {
+  
+}
+#story div.inner ul.contents {  
+  width: 90%;
+  margin-bottom: 100px;
+}
+
+#story div.inner ul.contents li::before {
+  content: "";  
+  display: block;
+  background-image: url(../img/1.svg); 
+  height: 200px;
+  background-size: cover;
+  
+  
+}
+#story div.inner ul.contents li::before {
+  content: "";  
+  display: block;  
+  height: 115px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+  
+  
+}
+#story div.inner ul.contents li:nth-child(1)::before {
+ background-image: url(../img/1.svg); 
+}
+
+#story div.inner ul.contents li:nth-child(2)::before { 
+  background-image: url(../img/2.svg); 
+}
+
+#story div.inner ul.contents li:nth-child(3)::before {
+  background-image: url(../img/3.svg);  
+}
+
+#story div.inner ul.contents li {  
+  flex-grow: 1;
+  width: calc(100% / 3);  
+}
+
+#story div.inner ul.contents li:nth-child(2) {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee
+}
+
+#story div.inner ul.contents li h5 {  
+  margin-bottom: 20px;
 }
 
 
+#story div.inner ul.contents li p {
+  color: #848484;
+  
+}
+#story div.inner a.more {
+  
+}
 
 
-#space .inner a.more::after{
-   border-color: white;
+ /* MIELE  */
+
+ #miele {
+   position: relative;
+
+ }
+
+ #miele div.inner {
+  height: 500px;
+  background-image: url(../img/main-miele-01.jpg);
+  margin-left: 0;
+  color: white;
+  padding-left: 10%;
+  
    
+ }
+
+#miele div.inner a {
+  color: white;
+}
+
+
+ #miele div.inner h2 {  
+  position: static;
+  font-size: 54px;
+}
+
+#miele div.inner h2 small {  
+  line-height: 3;
+}
+
+
+#miele div.inner p {    
+  line-height: 1.2;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+#miele div.inner a.more::before {
+  background-color: white;
+}
+
+#miele div.inner a.more::after {
+  border-color: white;
+}
+
+#miele div.inner a {  
+}
+
+#miele div.inner a span.pentagon {
+  
+}
+
+#miele::after {
+  content: "";
+  width:30%;
+  height: 120px;
+  position: absolute;
+  right: 0;
+  bottom:0;
+  background-color: #878762;
+  z-index: -1;/*우선순위를 뒤로줘서 겹치는부분은  miele  뒤로가서 가려지게 함*/
+  
+}
+
+/* contact */
+
+#contact {
+  position: relative;
+  
+
+  padding: 100px 0;
+}
+
+#contact::after {
+  content: "";
+  position: absolute; /*miele::after와 이어지는 부분으로 맞춰줌*/
+  background-color: #878762;  
+  width: 30%; /*miele::after와 이어지는 부분으로 맞춰줌*/
+  height: 100%; /*miele::after와 이어지는 부분으로 맞춰줌*/
+  right: 0; /*miele::after와 이어지는 부분으로 맞춰줌*/
+  bottom: 0; /*miele::after와 이어지는 부분으로 맞춰줌*/
+  z-index: -1;  /*  우선순위를 뒤로줘서 그림과 겹쳐지는 부분은 contact::before 그림뒤에 가려지게 함 */
+   
+}
+
+
+#contact div.inner::before {
+  content: "";
+  position: absolute; /* 부모는 inner로 잡아서 부모위치에서 오른쪽,왼쪽값만큼 떨어트려줌*/
+  background-image: url(../img/main-register-01.jpg);
+  width: 600px;
+  height: 700px;  
+  right: 80px;
+  top: calc(50% - 350px);  /* 세로 정중앙에 오게 하기위해서 50%로 잡고 그림의 세로크기만큼 빼줌*/
+  background-size: cover; /* contain은 그림은 다 나오지만 배경을 다 못채울수 있고 cover는 배경은 다 채우지만 그림이 짤릴수도 있음, 배경은 다 채워지므로 빈틈없이 채우고 싶을때 사용*/
+  background-position: center;
+  
+}
+#contact div.inner {
+  position: relative;
+  height: 560px; /* 그림이 커버상태이기 때문에 높이가 늘어나면 그림도 자연스럽게 맞춰진다*/
+}
+
+#contact div.inner h2 {
+  margin-bottom: 50px;
+  font-size: 60px;
+  position: static;
+}
+
+#contact div.inner h2 small {
+
+  line-height: 2;
+  color: #737373;
+}
+
+#contact div.inner p {
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+#contact div.inner a.more {
+
+  color: #000;
+}
+
+#contact div.inner a.more span.pentagon {
+  
+}
+
+#contact div.inner>*:not(h2) {
+  color: #737373;  
 }

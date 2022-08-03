@@ -5,8 +5,6 @@
     font-style: normal;
 }
 
-
-
 .hide{
   display: none;
   }
@@ -42,22 +40,34 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 /*  hn태그스타일링  */
 
+.h1{
+  font-size: 80px;
+  font-weight: 700;
+      
+}
+
 .h2{
   font-size: 35px;
   font-weight: 700;
-  font-family: 'Binggrae';     
+       
 }
 
 .h3{
   font-size: 31px;
   font-weight: 700;
-  font-family: 'Binggrae';   
+     
   
 }
 
 .h4{
   font-size: 30px;
   font-weight:700; 
+  
+}
+
+.h5{
+  font-size: 20px;
+  font-weight:700;  
   
 }
 
@@ -96,13 +106,18 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   
 }
 
+.flexAlignCenter{
+  align-items:center;
+  
+}
+
 .flexWrap{
   flex-wrap: wrap;
   
 }
 
 .br{
-  display: block;  /*단백질 전문브랜드 줄바꿈 세트중 하나*/ 
+  display: block;  /* 줄바꿈 세트중 하나*/ 
     
 }
 .p{
@@ -111,6 +126,7 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 /*패딩*/
+
 .padding50{
   padding: 50px;
   
@@ -123,6 +139,7 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 /* 버튼 */
+
 .btn1{
   height: 40px;
   width: 130px;
@@ -136,6 +153,7 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 /*글자정렬*/
+
 .text-center{
   text-align: center;
   
@@ -182,7 +200,7 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 .more span.pentagon{
   width: 30px;
-  height: 30px;
+  height: 33px;
   background-image: url(../img/logo.svg);
   background-size: cover; /*배경지역을 완전히 덮지만 이미지의 일부가 안보일수도 있음*/
   position: absolute;

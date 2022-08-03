@@ -1,4 +1,89 @@
-header div.inner {  
-  width: 1200px;
-  margin:0 auto; /*위아래 0, auto는 가로 중앙에 배치한다는 뜻으로 자연스럽게 좌우 여백은 균등하게 배분된다.*/
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f9fcfe;
+}
+
+header {
+  position: fixed; /*상위고정*/
+  width: 100%;
+  z-index: 1; /*우선순위를 가짐*/
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 1px solid #ccc;
+  left:0;
+  top: 27px;
+  z-index: 1;
+  box-sizing: border-box; /* border크기로 인해 넓이,높이에 영향을 받지않기위해 포함*/
+}
+
+
+header div.inner {     /* header안에 inner라는 클래스를 가진 모든 div*/ 
+  display: flex;
+  justify-content: space-between;
+  height: 88px;
+  align-items: center;
+  margin-top: 28px; 
+  position: relative; /* 누군가의 absolute기준인지 확인해볼것 */
+}
+
+
+header .inner { /* header안에 inner라는 클래스를 가진 모든 태그  */
+  
+}
+
+header .inner h1 {
+
+}
+
+header .inner h1 a {
+  display: block; /* a태그가 인라인요소이기 때문에 사이즈를 0으로하면 사라진다. 블럭요소를 줘서 화면에 다시 보이게 할 수 있다. */
+  background-image: url(../img/logo-pc.png);
+  width: 142px;
+  height: 35px;
+  font-size: 0; 
+
+}
+
+header .inner ul.gnb::before {
+  content: "";
+
+
+}
+
+
+header .inner ul.gnb { /* 회사소개 등 메뉴등을 가로로 정렬*/
+  display: flex;
+  align-self: flex-start; /*자식요소 개별로 정렬을 하고 싶을때 자식요소에 직접 사용(단 부모에 높이가 지정되어있어야한다)*/
+
+}
+
+header .inner ul.gnb::after { /*마우스를 올렸을때 흰색배경위에 나타나는 아랫선*/
+  content: "";
+  width: 105%; 
+  height: 0px;
+  position: absolute;
+  left: -2.5%;
+  top: 80px;
+  z-index: -1;
+  border: 1px solid #ccc;
+  display:none;
+}
+header .inner ul.gnb a {
+  
+}
+header .inner ul.enb {
+  
+}
+header .inner ul.enb select {
+  
+}
+header .inner ul.tnb {
+  
+}
+header .inner ul.tnb a {
+  
 }
