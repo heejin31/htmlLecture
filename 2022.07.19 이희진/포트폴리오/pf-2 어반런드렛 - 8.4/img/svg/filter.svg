@@ -1,0 +1,13 @@
+<svg  height="310" width="110" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" preserveAspectRatio="xMaxYMin meet">
+  <defs>
+    <filter id="f1" x="0" y="0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+    </filter>
+    <filter id="blurFilter"> 
+      <feGaussianBlur in="sourceGraphic" stdDeviation="11" />
+    </filter>
+  </defs>
+  <rect width="90" height="90" stroke="green" stroke-width="3"
+  fill="yellow" filter="url(#f1)" />
+  <text  x="30" y="90" filter="url(#blurFilter)" fill="#333" font-size="100">SVG</text>
+</svg>

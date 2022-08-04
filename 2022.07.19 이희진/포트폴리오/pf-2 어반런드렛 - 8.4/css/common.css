@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hide{
+  display: none;
+  }
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder { /* WebKit browsers */
+  color:transparent;
+}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:transparent;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:transparent;
+}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:transparent;
+}
+.inner {
+ width:80%;
+ margin:0 auto;
+  
+}
+.innerPadding{/* 카멜케이스방식:첫차소문자로 시작하며 다른단어의 첫자는 대문자로 시작한다*/
+  padding-top: 20px;
+  padding-bottom: 60px;
+   
+}
+/*  hn태그스타일링  */
+
+.h1{
+  font-size: 80px;
+  font-weight: 700;
+      
+}
+
+.h2{
+  font-size: 35px;
+  font-weight: 700;
+       
+}
+
+.h3{
+  font-size: 31px;
+  font-weight: 700;
+     
+  
+}
+
+.h4{
+  font-size: 30px;
+  font-weight:700; 
+  
+}
+
+.h5{
+  font-size: 20px;
+  font-weight:700;  
+  
+}
+
+/* flex */
+.flex{
+  display: flex;
+  
+}
+
+.flexBetween{
+  justify-content: space-between;
+  
+}
+
+.flexAround{
+  justify-content: space-around;
+    
+}
+
+.flexEvenly{
+  justify-content: space-evenly; 
+}
+  
+.flexCenter{
+  justify-content: center;
+  
+}
+
+.flexColumn{
+  flex-direction: column;
+  
+}
+
+.flexAlignEnd{
+  align-items:flex-end;
+  
+}
+
+.flexAlignCenter{
+  align-items:center;
+  
+}
+
+.flexWrap{
+  flex-wrap: wrap;
+  
+}
+
+.br{
+  display: block;  /* 줄바꿈 세트중 하나*/ 
+    
+}
+.p{
+  line-height: 1.5;
+  
+}
+
+/*패딩*/
+
+.padding50{
+  padding: 50px;
+  
+}
+
+.padding100{
+  padding-top: 100px;
+  padding-bottom: 100px;
+   
+}
+
+/* 버튼 */
+
+.btn1{
+  height: 40px;
+  width: 130px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  background-color: red;
+  font-size: 14px;
+  color: white;  
+  
+}
+
+/*글자정렬*/
+
+.text-center{
+  text-align: center;
+  
+}
+
+/* 화살표 */
+
+.more {
+/*   width: 300px; */
+  position: relative;
+  /*! bottom: 30px; */
+  /*! left: calc(50% - 50px); */
+  width: 100px;
+  text-align: center;
+  padding-right: 40px;
+}
+
+.more::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #333;
+  transform: rotate(45deg);
+  border-bottom: transparent;
+  border-left: transparent;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 6px);
+}
+
+.more::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 1px);
+}
+
+/* 펜타곤 */
+
+.more span.pentagon{
+  width: 30px;
+  height: 33px;
+  background-image: url(../img/logo.svg);
+  background-size: cover; /*배경지역을 완전히 덮지만 이미지의 일부가 안보일수도 있음*/
+  position: absolute;
+  right: -12px;
+  top: calc(50% - 13px); 
+/* display: none;  평소에는 안보이다가 마우스를 대는 hover를 쓸때 나타나게 할 예정 */
+  opacity: 0;
+  transition: all 0.3s;
+  
+}
+
+.more:hover span.pentagon{
+  display: block;
+  animation-name: moreRotate;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  animation-timing-function: linear;
+  opacity: 1;
+  
+  
+}
+
+
+@keyframes moreRotate{
+  0%{    
+    transform: rotate(0deg);    
+  }
+  
+  100%{    
+    transform: rotate(360deg);    
+  }
+  
+}
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+footer {  
+  background-color: black;
+}
+
+footer .inner p ,a, address {
+  color: white; 
+}
+
+footer div.inner {
+  
+}
+footer div.inner h1 {
+  
+}
+footer div.inner .left {
+  
+}
+footer div.inner .left .tel {
+  
+}
+footer div.inner .left .tel p.phone {
+  
+}
+footer div.inner .left .tel p:not(.phone) {
+  
+}
+footer div.inner .left .tel p strong {
+  
+}
+footer div.inner address {
+  
+}
+footer div.inner ul {
+  
+}
+footer div.inner ul li {
+  
+}
+footer div.inner ul li a {
+  
+}
+footer div.inner .right {
+  
+  align-items: flex-end;
+}
+footer div.inner .right ul {
+  
+}
+footer div.inner .right ul li {
+  
+}
+footer div.inner .right ul li a {
+  
+}
+footer div.inner .right a.email {
+  
+}

@@ -507,38 +507,3 @@
    opacity: 1;
   
 }
-
-/*aside*/
-aside {
-  position: sticky;
-  right: 0px; /*값이 0이어도 상관없으나 꼭 존재해야함*/
-  bottom: 0px; /*값이 0이어도 상관없으나 꼭 존재해야함*/
-  z-index: 1;
-}
-aside ul {
-  position:absolute;
-  right: 25px; /* 이 지점부터 포지션 absolute가 시작됨*/
-  bottom: 0px; /* 이 지점부터 포지션 absolute가 시작됨*/
-}
-
-aside a {
-  width: 50px;
-  right: 50px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
-  display: block;
-  font-size: 14px;
-  margin: 10px 0;
-  
-}
-
-aside a.shop {
-  background-color: black;
-  color: white;  
-}
-
-aside a.kakao {
-  background-color: #fbcc34;
-  color: black;  
-}
