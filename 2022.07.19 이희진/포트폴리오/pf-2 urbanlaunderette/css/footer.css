@@ -1,0 +1,143 @@
+footer {
+  background-color: #000000;
+  color: #fff;
+  line-height: 1.7;
+  padding-bottom: 100px;
+  padding-top: 250px;
+  
+  position: relative;
+ }
+footer a{
+  color: #fff;
+}
+footer div.inner {
+  height: 300px;
+  align-items: flex-end;
+}
+footer div.inner h1 {
+  
+}
+footer div.inner .left {
+  
+}
+footer div.inner .left .tel {
+  font-size: 15px;
+}
+footer div.inner .left .tel p.phone {
+  
+}
+footer div.inner .left .tel p.phone strong {
+  
+  display: block;
+  font-size: 40px;
+  line-height: 1;
+  margin: 12px 0 26px;
+}
+footer div.inner .left .tel p:not(.phone) {
+  
+}
+footer div.inner .left address {
+  margin-bottom: 100px;
+  margin-top: 60px;
+  color: #999;
+}
+footer div.inner .left ul.bnb {
+  position: relative;
+ 
+  
+}
+
+footer div.inner .left ul.bnb::before {
+  content: "";
+  border: 1px solid gray;
+  display: flex;
+  position: absolute;
+  width: 270%;    
+  transform: translateY(-50px);
+}
+
+
+
+footer div.inner .left ul.bnb li {
+  
+}
+footer div.inner .left ul.bnb li a {
+  padding: 15px 5px;
+  font-size: 14px;
+}
+footer div.inner .left ul.bnb li:not(:first-child) a{
+  color: #999;
+}
+footer div.inner .right {
+  
+}
+footer div.inner .right ul.sns {
+  
+  margin-bottom: 100px;
+  flex-direction: row;
+  display: flex;
+  gap: 40px;
+}
+footer div.inner .right ul.sns li {
+  
+}
+
+footer div.inner .right ul.sns li a {  
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+footer div.inner .right ul.sns li:nth-child(1) a {    
+  background-image: url(../img/logo-facebook.svg);
+  
+}
+
+footer div.inner .right ul.sns li:nth-child(2) a {    
+  background-image: url(../img/logo-instagram.svg);
+  
+}
+
+footer div.inner .right ul.sns li:nth-child(3) a {   
+  background-image: url(../img/logo-blog.svg);
+ 
+}
+
+footer div.inner .right > a.email {  
+  color: #999;
+}
+
+
+
+
+footer a.top {
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  position: absolute;
+  top: -25px;
+  left: calc(50% - 25px);
+  padding: 0;
+  transform: rotate(-90deg);
+  transition: all 0.5s;
+}
+footer a.top:hover {
+  background-color: #615e5e;
+}
+footer a.top::before {
+  right: calc(50% - 15px);
+  background-color: white;
+}
+footer a.top::after {
+  right: 10px;
+  border-color: white;
+}
+.top:hover span.pentagon {  
+  animation-name: none;
+  display: none;
+}
+

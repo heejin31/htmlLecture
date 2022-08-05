@@ -511,14 +511,14 @@
 /*aside*/
 aside {
   position: sticky;
-  right: 0px; /*값이 0이어도 상관없으나 꼭 존재해야함*/
-  bottom: 0px; /*값이 0이어도 상관없으나 꼭 존재해야함*/
+  right: 30px; /*값이 0이어도 상관없으나 꼭 존재해야함*/
+  bottom: 40px; /*값이 0이어도 상관없으나 꼭 존재해야함*/
   z-index: 1;
 }
 aside ul {
   position:absolute;
-  right: 25px; /* 이 지점부터 포지션 absolute가 시작됨*/
-  bottom: 0px; /* 이 지점부터 포지션 absolute가 시작됨*/
+  right: 30px; /* 이 지점부터 포지션 absolute가 시작됨*/
+  bottom: 40px; /* 이 지점부터 포지션 absolute가 시작됨*/
 }
 
 aside a {
@@ -542,3 +542,4 @@ aside a.kakao {
   background-color: #fbcc34;
   color: black;  
 }
+
