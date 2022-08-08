@@ -9,7 +9,7 @@ header {
   z-index: 1; /*우선순위를 가짐*/
 }
 
-header::before {
+ header::before { /* 맨위 고정 회색선 */
   content: "";
   position: absolute;
   width: 100%;
@@ -18,7 +18,7 @@ header::before {
   top: 27px;
   z-index: 1;
   box-sizing: border-box; /* border크기로 인해 넓이,높이에 영향을 받지않기위해 포함*/
-}
+} 
 
 
 header div.inner {     /* header안에 inner라는 클래스를 가진 모든 div*/ 
@@ -27,7 +27,7 @@ header div.inner {     /* header안에 inner라는 클래스를 가진 모든 di
   height: 88px;
   align-items: center;
   margin-top: 28px; 
-  position: relative; /* 누군가의 absolute기준인지 확인해볼것 */
+  position: relative; /* tnb의 앱솔루트 포지션을 사용하기 위해 줌 */
 }
 
 
@@ -39,7 +39,7 @@ header .inner h1 {
 
 }
 
-header .inner h1 a {
+header .inner h1 a { /*빙그레 로고*/
   display: block; /* a태그가 인라인요소이기 때문에 사이즈를 0으로하면 사라진다. 블럭요소를 줘서 화면에 다시 보이게 할 수 있다. */
   background-image: url(../img/logo-pc.png);
   width: 142px;
@@ -48,42 +48,168 @@ header .inner h1 a {
 
 }
 
-header .inner ul.gnb::before {
-  content: "";
 
-
-}
-
-
-header .inner ul.gnb { /* 회사소개 등 메뉴등을 가로로 정렬*/
+header .inner ul.gnb {
   display: flex;
-  align-self: flex-start; /*자식요소 개별로 정렬을 하고 싶을때 자식요소에 직접 사용(단 부모에 높이가 지정되어있어야한다)*/
-
+  align-self: flex-start; 
 }
 
-header .inner ul.gnb::after { /*마우스를 올렸을때 흰색배경위에 나타나는 아랫선*/
+header .inner ul.gnb::before { /* gnb에 마우스를 댔을때 내려오는 흰배경,높이를 0으로 주고 hover에 원하는 크기를 준다*/
   content: "";
-  width: 105%; 
-  height: 0px;
+  background-color: white;
+  width: 105%;
+  height: 0;
   position: absolute;
   left: -2.5%;
-  top: 80px;
-  z-index: -1;
-  border: 1px solid #ccc;
-  display:none;
+  top:-28px;
+  z-index: -1; /*글자뒤에 배경으로 깔기위해서 */
+  transition: all 1s;
 }
+
+header .inner ul.gnb:hover::before {
+  height: 440px;
+}
+
+header .inner ul.gnb::after { /*gnb메뉴에 마우스를 대면 나타나는 회색줄 */
+    content: "";
+    width: 105%;
+    height: 0px;
+    position: absolute;
+    left: -2.5%;
+    top: 80px;
+    z-index: -1;
+    border: 1px solid #ccc;
+    display:none; /*처음에는 안보임*/
+}
+
+header .inner ul.gnb:hover::after {
+  display: block; /* 마우스 대면 보임 */
+}
+
 header .inner ul.gnb a {
   
 }
-header .inner ul.enb {
+
+header .inner ul.gnb>li>h2 a { /* gnb안에 대 제목들만*/
+  font-weight: 400;
+  padding: 20px 21px;
+  display: block;
+  /*! line-height: 3; */ /* 블럭에게만 적용되는 속성 */
+  font-size: 20px;
+  padding-top: 26.5px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+header .inner ul.gnb>li:hover>h2 a {
+    color: red;
+}
+
+header .inner ul.gnb>li>h2 a::after { /*메뉴에 글자대면 나오는 빨간줄*/
+   content: "";
+   display: block;
+   width: calc(100% - 42px); /* 모르겠음*/
+   border-bottom: 4px solid red;
+   transform: translateY(32px)  scaleX(0); /*scaleX 가로방향으로 변화*/
+   position: absolute;
+   left: 21px; /* ? */
+   transition: all 0.5s;
+   transform-origin: 50%;
+}
+
+header .inner ul.gnb>li:hover>h2 a::after {
+    content: "";
+    display: block;
+    width: calc(100% - 42px);
+    border-bottom: 4px solid red;
+    transform: translateY(32px)  scaleX(100%);/*scaleX 가로방향으로 변화*/
+    position: absolute;
+    left: 21px;
+}
+
+/* gnb서브메뉴 */
+
+header .inner ul.gnb li ul.gnbsub {
+  display: none;
+
+}
+
+header .inner ul.gnb:hover ul.gnbsub {
+  opacity: 0;
+  display: block;
+  animation-name: gnbfadein;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  margin-top: 27px;
+}
+
+@keyframes gnbfadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+header .inner ul.gnb li ul.gnbsub li a {
+  line-height: 2;
+  padding-left: 21px; /*대제목에 준 패딩값과 같은값을 주어 위치맞추기*/
+  padding-right: 2px; /* ? */
+}
+
+
+
+/* enb */
+header .inner ul.enb {  
+  display: flex;
+  gap: 15px;
+}
+
+header .inner ul.enb select { /* 언어 선택상자 꾸미기*/
+  background-color: transparent; /* 투명한*/
+  border: none;
+}
+
+header .inner ul.enb li a {  /*햄버거*/
+  font-size: 0;
+  width: 20px;  
+  height: 14px;
+  display: block;  
+  align-items: center; /* 햄버거의 가운데줄을 정렬하기 위해   before의 부모인 여기에 사용*/
+  border-top: 3px solid #666;
+  border-bottom: 3px solid #666;
+  display: block;
+  display: flex; /* 햄버거의 가운데줄을 정렬하기 위해 before의 부모인 여기에 사용*/
+}
+
+header .inner ul.enb li a::before{ /* 햄버거 중간줄*/
+  content: "";
+  width: 100%;
+  display: block;
+  height: 3px;
+  background-color: #666;
+  }
+
+header .inner ul.tnb {  
+  position: absolute; 
+  right: 0;
+  top: -20px;
+  font-size: 12px;
+  display: flex; /* 가로정렬 */
+  gap: 14px; /*구매포털과 인재채용사이의 간격을 위해 줌*/
+}
+header .inner ul.tnb li a {
   
 }
-header .inner ul.enb select {
-  
-}
-header .inner ul.tnb {
-  
-}
-header .inner ul.tnb a {
-  
+
+header .inner ul.tnb li a::after {
+  content: "";
+  display: inline-block; /* 글자와 이미지를 한줄에 같이 배치하기위해 인라인블록 사용, 블록을 사용시 글씨와 그림이 다른줄에 배치된다  */
+  background-image: url(../img/openinnew.svg);
+  width: 20px;
+  height: 20px;  
+  background-size: contain;
+  vertical-align: -4px; /* 이미지와 텍스트를 같은 요소에서 중간으로 배치하기 위해 사용,수직정렬*/
 }

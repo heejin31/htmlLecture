@@ -1,7 +1,11 @@
-h1,h2,h3,h4,h5,h6{
+html,body {
+    height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
     size: 100%;
 }
 
-a{
+a {
     text-decoration: none;
 }

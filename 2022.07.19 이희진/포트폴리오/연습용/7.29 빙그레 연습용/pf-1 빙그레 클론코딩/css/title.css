@@ -1,0 +1,33 @@
+#title {  
+  height: 100%;
+  background-image: url(../img/section01_bg.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#title form.search {
+  
+}
+#title form.search input {
+  
+}
+#title form.search button {
+  
+}
+#title h2 {
+  
+}
+#title ul.hash {  
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  column-gap: 40px;
+}
+#title ul.hash li {
+  
+}
+#title ul.hash li a {
+  
+}

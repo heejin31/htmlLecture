@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/title.css" />
   </head>
   <body>
     <!-- 상단영역 -->
@@ -22,7 +23,7 @@
         <ul class="gnb">
           <li>
             <h2><a href="">회사소개</a></h2>
-            <ul>
+            <ul class="gnbsub">
               <li><a href="">CEO인사말</a></li>
               <li><a href="">경영이념</a></li>
               <li><a href="">사업분야</a></li>
@@ -31,7 +32,7 @@
           </li>
           <li>
             <h2><a href="">제품소개</a></h2>
-            <ul>
+            <ul class="gnbsub">
               <li><a href="">아이스크림</a></li>
               <li><a href="">우유</a></li>
               <li><a href="">발효유</a></li>
@@ -46,7 +47,7 @@
 
           <li>
             <h2><a href="">지속가능경영</a></h2>
-            <ul>
+            <ul class="gnbsub">
               <li><a href="">지속가능경영 체계</a></li>
               <li><a href="">Eco-Friendly</a></li>
               <li><a href="">Shared Value</a></li>
@@ -58,7 +59,7 @@
           </li>
           <li>
             <h2><a href="">투자정보</a></h2>
-            <ul>
+            <ul class="gnbsub">
               <li><a href="">전자공고</a></li>
               <li><a href="">주식정보</a></li>
               <li><a href="">공시정보</a></li>
@@ -68,7 +69,7 @@
           </li>
           <li>
             <h2><a href="">고객센터</a></h2>
-            <ul>
+            <ul class="gnbsub">
               <li><a href="">고객상담</a></li>
               <li><a href="">사이버신고</a></li>
               <li><a href="">안전신문고</a></li>
@@ -84,17 +85,28 @@
             </select>
           </li>
           <li><a href="">전체메뉴보기</a></li>
-
-          <ul class="tnb">
-            <li><a href="">구매포털시스템</a></li>
-            <li><a href="">인재채용</a></li>
-          </ul>
+        </ul>
+        <ul class="tnb">
+          <li><a href="">구매포털시스템</a></li>
+          <li><a href="">인재채용</a></li>
         </ul>
       </div>
     </header>
 
     <!-- 타이틀영역 -->
-    <div></div>
+    <div id="title">
+      <form action="" class="search">
+        <input type="text" placeholder="제품명을 입력하세요" />
+        <button>search</button>
+      </form>
+      <h2 class="hide">검색어/해시태그</h2>
+      <ul class="hash">
+        <li><a href="">#링키바</a></li>
+        <li><a href="">#더단백</a></li>
+        <li><a href="">#요플레프로틴</a></li>
+        <li><a href="">#바나나맛우유</a></li>
+      </ul>
+    </div>
     <!-- 내용영역  -->
     <main></main>
     <!-- 하단영역 -->
