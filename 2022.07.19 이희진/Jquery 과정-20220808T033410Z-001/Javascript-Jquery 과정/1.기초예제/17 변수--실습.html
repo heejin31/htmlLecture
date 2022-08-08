@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script>	
+	$(document).ready(
+		function(){
+			// a를 변수선언하고 그 안에 10을 넣으시오
+			var a=10;
+			// btn1을 클릭하면 실행하시오(경고창을 표시하기-안의 내용은 변수a)
+			$("#btn1").click(
+				function(){
+					alert(a); //변수는 겹따옴표를 쓰지 않는다
+				}
+			);
+		}
+	);
+</script>
+</head>
+
+<body>
+    <button id="btn1">btn1-Click!!</button><br />
+    <button id="btn2">btn2-Click!!</button><br />
+    <button id="btn3">btn3-Click!!</button><br />
+</body>
+</html>

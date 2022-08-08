@@ -1,0 +1,61 @@
+#top {
+    
+  
+  position: relative;
+}
+#top div.inner {    
+  align-items: flex-start;
+}
+#top div.inner h1 {
+    
+}
+#top div.inner h1 a {    
+  font-size: 0;
+  display: block;
+  background-image: url(../img/posco.svg);
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#top div.inner ul.gnb {    
+  gap: 50px;
+  /*! border: 1px solid #ccc; */
+  float: left;
+  position: absolute;
+  left: 320px;
+  top: 37px;
+}
+#top div.inner ul.gnb li {
+    
+}
+#top div.inner ul.gnb li a {
+    
+}
+
+#top div.inner ul.gnb>a {
+  
+}
+
+#top div.inner ul.gnb > a::after {
+  
+  content: "";
+  background-image: url(../img/ico.png);
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-size: cover;
+}
+#top div.inner ul.gnb li ul {
+    
+}
+#top div.inner ul.gnb li ul li {
+    
+}
+#top div.inner ul.gnb li ul li a {
+    
+}
+
+#top div.inner .tnb {
+  
+}

@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style type="text/css">
+		html,body{
+			height: 100%;
+		}
+
+		div.win{
+			position: absolute;
+			left: 0;
+			top:0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.6);
+			display:none;
+		}
+		div.in{
+			position: absolute;
+			width: 500px;
+			height: 500px;
+			border: 2px solid #ccc;
+			top:calc(50% - 350px);
+			left: calc(50% - 250px);
+			transition: all 3s;
+		}
+		.moveT{
+			top:50px !important;
+		}
+		i{
+			position: absolute;
+			right: -35px;
+			font-size: 44px;
+			top: -44px;
+		}
+		div.detail{
+	   text-align: center;
+		}
+		div.detail h2{
+
+		}
+		div.detail ul{
+			list-style: none;
+			display: flex;
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 0;
+		}
+		div.detail ul li{
+
+		}
+		div.detail ul li a{
+
+		}
+		div.detail ul li a img{
+    	max-width: 100%;
+		}
+		.popup_img{
+			max-width: 500px;
+			margin: 0 auto;
+			height: 400px;
+			border: 1px solid #ccc;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		 }
+		.popup_img img{
+			max-width: 96%;
+		}
+	</style>
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="js/jquery-1.6.2.min.js"></script>
+    <script>
+		$(document).ready(
+			function(){
+
+			   // h1을 클릭하면 실행하시오
+				 $("h1").click(
+						function(){
+							//div를 서서히 보이게 하시오
+							//$("div").fadeIn();
+							$("div.in").addClass("moveT");
+							$("div").fadeToggle();
+							// div의 안의 뒤쪽에 태그를 추가하시오
+							$("div i").remove(); //앞의 요소(태그)를 삭제하시오
+							//$("div").append("<i class='ion-close-circled'></i>");
+							$("div.in").prepend("<i class='ion-close-circled'></i>");
+							// 요소안의 앞쪽에 태그를 배치하시1
+							$("i").click(
+		 					 function(){
+		 						 $("div").fadeOut();
+		 					 }
+		 				 	);
+
+						}
+				 );
+
+				// 팡업이미지
+				// $(".detail").prepend("<div class='popup_img'><img src='' alt='' /></div>");
+				 $(".detail ul").before("<div class='popup_img'><img src='' alt='' /></div>");
+				 // before();요소의 버깥앞에 배라
+         $(".popup_img img").attr("src","img/1.jpg");
+				 var current_img;
+				 $(".detail ul li").click(
+					 function(){
+						 //current_img=$(this).children().children("img").attr("src");
+						 current_img=$(this).find("img").attr("src");
+						 $(".popup_img img").attr("src",current_img).hide().fadeIn();
+						 // 메서드 체인 속성을변경하고 검주고 페이드인
+						 return false;
+					 }
+				 );
+
+			}
+		);
+	</script>
+	</head>
+
+<body>
+	<h1>작품1</h1>
+	<div class="win">
+		<div class="in">
+			<p>메모장은 간단한 문서를 만들 수 있는 기본 텍스트 편집기입니다. 메모장을 사용하는 가장 일반적인 경우는 텍스트(.txt) 파일을 보거나 편집할 때이지만, 많은 사용자들은 메모장을 웹 페이지를 만드는 간단한 도구로 사용하고 있습니다.</p>
+			<p>메모장은 아주 기본적인 서식만 지원하므로 순수 텍스트만 필요한 문서에 특별한 서식이 함께 저장되는 일은 발생하지 않습니다. 게시된 웹 페이지에 특별 문자나 기타 서식이 표시되지 않거나 그로 인해 오류가 발생할 수 있으므로 메모장은 웹 페이지용 HTML 문서를 만들 때 특히 유용합니다.</p>
+			<p>메모장 파일을 유니코드, ANSI, UTF-8 또는 big-endian 유니코드로 저장할 수 있습니다. 이런 형식은 다양한 문자 집합을 사용하는 문서를 가지고 작업할 때 융통성을 높여줍니다.</p>
+		</div>
+	</div>
+	<div class="detail">
+		<h2>웹퍼블리싱작품</h2>
+		<ul>
+			<li><a href=""><img src="img/1.jpg" alt=""></a></li>
+			<li><a href=""><img src="img/2.jpg" alt=""></a></li>
+			<li><a href=""><img src="img/3.jpg" alt=""></a></li>
+		</ul>
+	</div>
+
+</body>
+</html>

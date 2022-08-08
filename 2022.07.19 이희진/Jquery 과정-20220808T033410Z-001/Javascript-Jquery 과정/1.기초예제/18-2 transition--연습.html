@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>transition속성</title>
+<style type="text/css">
+	div{
+		width:800px;
+		height:200px;
+		border:3px solid black;
+		margin:0 auto;
+		transition:all 1s;
+		background:url(images/snow.jpg) no-repeat;
+		background-size:cover;
+		}
+		.change{
+			border:#FC0 5px solid;
+			width:900px;
+			height:300px;
+			}
+</style>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+	$(
+		function(){
+//div에 마우스 올리면 실행해라(div에 change클래스를 붙여라..마우스를 띄면 change클래스를 없애라
+			$("div").hover(
+				function(){
+					$(this).addClass("change")
+				},
+				function(){
+					$(this).removeClass("change");
+				}
+			);
+		}
+	);
+</script>
+</head>
+
+<body>
+	<div id="box1">box1</div>
+</body>
+</html>

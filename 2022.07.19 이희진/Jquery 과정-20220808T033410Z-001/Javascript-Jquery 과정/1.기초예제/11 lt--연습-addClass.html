@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lt()</title>
+<style>
+    *{
+	margin: 0;
+	padding: 0;
+	}
+	ul{
+	list-style: none;
+	max-width: 900px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 50px;
+	}
+	li{
+
+	}
+	span{
+	 cursor: pointer;	
+	}
+	img{
+	position: absolute;
+	right: 0;
+	top:0;
+	}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(
+		function(){
+			$("li:gt(0)").css("color","#ccc");
+            $("li:gt(0) img").hide();
+            $("li").click(function(){
+                $(this).css("color","#000");
+                $(this).children("img").fadeIn(300);
+                $(this).siblings().css("color","#ccc");
+                $(this).siblings().children("img").hide();
+            });
+		}
+	);
+</script>
+</head>
+
+<body>
+	<ul>
+        <li>
+          <span>작품1</span>
+          <img src="img/1.jpg">
+      </li>
+      <li>
+          <span>작품2</span>
+          <img src="img/2.jpg">
+      </li>
+      <li>
+          <span>작품3</span>
+          <img src="img/3.jpg">
+      </li>
+    </ul>
+</body>
+</html>

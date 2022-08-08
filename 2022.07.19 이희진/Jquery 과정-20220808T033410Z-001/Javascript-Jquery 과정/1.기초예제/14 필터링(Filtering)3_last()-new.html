@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(
+		function(){
+			/*div안의 p중에 마지막을 제외한 나머지요소p 스타일을 지정하시오(color를 gray로)
+			$("div p").last().siblings().css("color","gray"); */
+			
+			//div안의 p중에 마지막이 아닌 p 스타일을 지정하시오(color를 gray로)
+			$("div p").not("div p:last").css("color","gray");
+		}
+	);
+</script>
+</head>
+
+<body>
+<div id="container">
+	<p>
+    	p
+    </p>
+    <p>
+    	p
+    </p>
+    <p>
+    	p
+    </p>
+    <p>
+    	p
+    </p>
+    <p>
+    	p
+    </p>
+    <p>
+    	p
+    </p>
+</div>
+</body>
+</html>

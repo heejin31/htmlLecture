@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<style>
+	
+	div>ul{
+		list-style:none;
+		margin:0;
+		padding:0;
+		max-width: 800px;
+		margin: 0 auto;
+		/*! display: flex; */
+		justify-content: center;
+	}
+	div>ul>li{
+		cursor:pointer;
+		background-color: #eee;
+		border-bottom: 1px solid #ccc;
+		padding: 4px 8px;
+		position:relative;
+        }
+    div>ul>li i{
+        position: absolute;
+        right: 20px;
+    }
+
+</style>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(
+		function(){
+				/*
+				ul을 가지고 있는 li에 스타일을 지정하시오(배경색지정)
+				$("li").has("ul").css("background","gray");
+				*/
+				$("li").has("ul").children("ul").before("<i class='ion-arrow-down-b'></i>");
+				$("li").has("ul").children("ul").hide();
+
+				//ul을 가지고 있는 li를 클릭하면 실행하시오(클릭한li의 ul을 slideToggle하시오)
+				var a=0;
+				var cu;
+				var cu2;
+				console.log("a의 초기값 :"+a);
+				$("li").has("ul").click(
+						function(){
+							$(this).children("ul").slideToggle();
+							$(this).siblings().children("ul").slideUp();
+							$(this).siblings().children("i").attr("class","ion-arrow-down-b"); // 초기 화살표------  ▼ 
+
+							if(a==0){ // 펼친서브인 경우 화살표-------------------------------------  ▲
+								$(this).children("i").attr("class","ion-arrow-up-b"); // ▲
+								a=1;
+								cu=$(this).attr("data-n");
+								cu2=cu;
+								console.log("if / "+"a:"+a+" cu:"+cu+" cu2:"+cu2);
+							}else{ // 닫힌서브인 경우 화살표----------------------------------------  ▼ 
+								cu=$(this).attr("data-n");
+								if(cu2!=cu){
+									$(this).children("i").attr("class","ion-arrow-up-b"); // ▲
+									a=1;
+									cu2=cu;
+									console.log("else>if / "+"a:"+a+" cu:"+cu+" cu2:"+cu2);
+								}else{
+									$(this).children("i").attr("class","ion-arrow-down-b"); // ▼ 
+									a=0;
+									console.log("else>else / "+"a:"+a+" cu:"+cu+" cu2:"+cu2);
+								}
+								//a=0;
+							}
+							// cu=$(this).attr("data-n");
+							
+
+						}
+				);
+		}
+	);
+</script>
+</head>
+
+<body>
+	<div id="container">
+		<ul>
+			<li data-n="0">
+				학력
+				<ul>
+					<li>2012년 ㅁㄴ;ㅇㄻㄴ;ㅇㄹ;ㅣㅁㄴㅇㄹ;ㅁ;ㄴㅇㄹ;ㅣ</li>
+					<li>2016녀ㅓㄴ.................................</li>
+					<li>2022년 ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ</li>
+				</ul>
+			</li>
+			<li>거주지 : 서울시 강남구
+
+			</li>
+			<li data-n="1">
+				경력
+				<ul>
+					<li>2022년ㄴㄴㅁㅇㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㄴㅁㅇㄹ </li>
+					<li>2022년ㄴㄴㅁㅇㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㄴㅁㅇㄹ</li>
+				</ul>
+			</li>
+			<li data-n="2">
+				자격증
+				<ul>
+					<li>컴퓨터그래픽운용기능사</li>
+					<li>컴퓨터그래픽운용기능사</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

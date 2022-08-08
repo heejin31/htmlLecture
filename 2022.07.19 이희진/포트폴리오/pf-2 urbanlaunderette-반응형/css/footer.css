@@ -4,7 +4,7 @@ footer {
   line-height: 1.7;
   position: relative;
 }
-footer::before{
+footer::before {
   content: "Urban Launderette";
   color: #3f3d3d;
   position: absolute;
@@ -13,7 +13,7 @@ footer::before{
   font-size: 0;
   font-weight: 700;
 }
-footer a{
+footer a {
   color: #fff;
 }
 footer div.inner {
@@ -40,13 +40,21 @@ footer div.inner .left .tel p.phone strong {
 }
 footer div.inner .left .tel p:not(.phone) {
   
+
 }
+
+
 footer div.inner .left address {
   margin-bottom: 100px;
   margin-top: 60px;
   color: #999;
   font-size: 14px;
 }
+
+footer div.inner .left address span {
+  display: none;
+}
+
 footer div.inner .left ul.bnb {
   
   transform: translateX(-14px);
@@ -58,19 +66,19 @@ footer div.inner .left ul.bnb li a {
   padding: 15px 14px;
   font-size: 14px;
 }
-footer div.inner .left ul.bnb li:not(:first-child) a{
+footer div.inner .left ul.bnb li:not(:first-child) a {
   color: #999;
 }
 footer div.inner .right {
-  
+    
 }
-footer div.inner .right ul.sns {
-  
+footer div.inner .right ul.sns {  
   margin-bottom: 100px;
 }
 footer div.inner .right ul.sns li {
   
 }
+
 footer div.inner .right ul.sns li a {
   font-size: 0;
   width: 45px;
@@ -80,6 +88,7 @@ footer div.inner .right ul.sns li a {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 footer div.inner .right ul.sns li:nth-child(1) a {
     background-image: url(../img/f.svg);
 }
@@ -91,8 +100,20 @@ footer div.inner .right ul.sns li:nth-child(3) a {
 }
 footer div.inner .right > a.email {
   color: #999;
+ 
 }
-footer a.top{
+
+footer div.inner .right > a.email::before { /*맨아래 회색선*/
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  border: 1px solid #ccc;
+  left: 0;  
+  transform: translateY(-20px);
+  
+}
+footer a.top {
   font-size: 0;
   width: 50px;
   height: 50px;
@@ -104,18 +125,18 @@ footer a.top{
   transform: rotate(-90deg);
   transition: all 0.5s;
 }
-footer a.top:hover{
+footer a.top:hover {
   background-color: #615e5e;
 }
-footer a.top::before{
+footer a.top::before {
   right: calc(50% - 15px);
   background-color: white;
 }
-footer a.top::after{
+footer a.top::after {
   right: 10px;
   border-color: white;
 }
-.top:hover span.pentagon{
+.top:hover span.pentagon {
   
 }
 

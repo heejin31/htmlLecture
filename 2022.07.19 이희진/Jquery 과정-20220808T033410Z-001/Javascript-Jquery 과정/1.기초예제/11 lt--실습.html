@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+	$(document).ready(	
+		function(){
+			$("li:eq(2)").css("color","red");
+			$("li:lt(2)").css("color","blue"); //lt이전 
+			$("li:gt(3)").css("color","green");  //gt이후 greater than
+		}
+	);
+</script>
+</head>
+
+<body>
+	<ul>
+    	<li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>jquery</li>
+        <li>html5</li>
+        <li>css3</li>
+        <li>표준게시판</li>
+    </ul>
+</body>
+</html>

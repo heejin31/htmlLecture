@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3-2</title>
+<style type="text/css">
+  body{
+    transition: all 1s;
+  }
+	.day{
+    background-color: #eee;
+  }
+  .night{
+    background-color: #999;
+  }
+</style>
+<script src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(
+		function(){
+      $(".ya").click(
+        function(){
+          $("body").addClass("night");
+          return false;
+        }
+      );      
+		}
+	);
+</script>
+</head>
+
+<body>
+	  <span>
+    <a href="" class="ju">주간모드</a>
+    <a href="" class="ya">야간모드</a>
+   
+  </span>
+  
+</body>
+</html>
