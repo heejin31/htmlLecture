@@ -196,6 +196,7 @@
  background-repeat:no-repeat;
  background-position:right bottom;
  background-origin:content-box;
+ transition: all 0.3s ease-in-out;
 }
 #community .inner>article.cyber {
  background-color:#fcf5e5;
@@ -310,6 +311,10 @@
  color:white;
  background-color:red;
 }
+/* 사이드*/
+.border {
+ box-shadow: 2px 2px 5px #ccc;
+}
 aside#quick {
  position:fixed;
  right:20px;
@@ -347,7 +352,7 @@ aside#quick a.top::before {
  border-left:transparent;
  border-bottom:transparent;
  transform:translateY(50%) rotate(-45deg);
- transition:all .5s
+ transition:all .5s;
 }
 aside#quick a.top:hover::before {
  margin-top:-10px

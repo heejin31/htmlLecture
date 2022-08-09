@@ -19,35 +19,18 @@
     </style>
     <script src="js/jquery-1.6.2.min.js"></script>
     <!-- <script>
-	$(document).ready(
-		function(){
-			//h1에 클래스를 붙여라(head)
-			$("h1").addClass("head");
-			$("aside").addClass("sdown");
-			//a를 클릭하면 실행하시오
-			$("a").click(
-				function(){
-					//a에 클래스를 붙이시오(head)
-					$("a").addClass("head");
-				}
-			);
-			// 공지사항 닫기클릭애니
-			$("aside button").hover(function(){
-				$("aside").removeClass("sdown");
-			});
-
-			
-
-			$("aside button").click(function(){
-			  $("aside").toggleClass("noticeAni");
-			});
-
-		}
-	);
+      $(document).ready(function () {
+        $("aside").addClass("sdown");
+        $(".close").click(function () {
+          $("aside").toggleClass("noticeAni");
+        });
+      });
+    </script> -->
+    <!-- <script>
+	$(document).ready(function(){
+	
+	});
 </script> -->
-    <script>
-      $(document).ready(function () {});
-    </script>
     <style type="text/css">
       aside {
         height: 80px;
@@ -55,16 +38,15 @@
         text-align: center;
         position: relative;
         transition: all 1s ease-out;
-        animation-name: asideSlide;
         animation-duration: 1s;
         animation-iteration-count: 1;
         animation-timing-function: ease-out;
         animation-fill-mode: forwards;
-        top: -80px;
+        animation-direction: reverse;
       }
       @keyframes asideSlide {
         100% {
-          top: 0px;
+          margin-top: -80px;
         }
       }
       aside button {
