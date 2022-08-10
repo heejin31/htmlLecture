@@ -1,0 +1,9 @@
+#title {
+  height: 927px; 
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 1;
+  background-image: url(../img/main1.jpg);
+}

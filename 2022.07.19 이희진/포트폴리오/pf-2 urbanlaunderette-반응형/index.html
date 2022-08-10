@@ -15,7 +15,37 @@
     <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/ham.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            //console.log($(window).height());
+
+           let n=0; //변수 let에 0을 넣어라(변수선언과 초기화)
+            $("header .inner .wgnb a.ham").click(function(){
+                                       
+                if(n==0) { //n의 들어있는 값이 0과 같다
+                console.log(n);
+                 $("div.menuback").remove();
+                 $("#top").prepend("<div class='menuback'></div>");
+                 $(".menuback").css({"height":$(window).height()});
+                 n=1;
+                 console.log("클릭한이후의 n값:"+n);
+                 }
+                 else {
+                 console.log(n);
+                 $(".menuback").addClass("menubackmove");
+                 n=0;
+                 console.log("두번째 클릭한이후의 n값:"+n);
+                 }                
+                 return false;                        
+                
+            });
+        });
+
+    </script>
 </head>
 <body>
     <!-- 상단영역 -->

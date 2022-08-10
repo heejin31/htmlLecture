@@ -8,18 +8,15 @@
 	 a{
 		 text-decoration:none;
 		 color:#333;
+		 transition: all 0.5s;
 		 }
 	 /*a:hover의 스타일 지정: 글자색 지정*/
-	 a:hover{
-		 color:#F60;
-		 }
+	 
 	.click{
+		background-color: #eee;
 		color:#F60;
 		}
-	.noclick{
-		color:#333;
-		font-style:italic;
-		}
+	
 	</style>
 <script src="js/jquery-1.6.2.min.js"></script>
 <script>
@@ -31,7 +28,9 @@
 			$("li a").click(
 				function(){
 					$(this).addClass("click");
-					$(this).parent().siblings().children().removeClass("click");
+					//$(this).parent().siblings().children().removeClass("click");
+					$("li a").not(this).removeClass("click");
+
 				}
 			);
 		}
@@ -40,11 +39,13 @@
 </head>
 
 <body>
-	<ul>
-      <h3>웹표준기술</h3>
-      <li><a href="#">html</a></li>
-      <li><a href="#">css</a></li>
-      <li><a href="#">javascript</a></li>
-    </ul>
+	<div>
+		<h3>웹표준기술</h3>
+		<ul>
+			<li><a href="#">html</a></li>
+			<li><a href="#">css</a></li>
+			<li><a href="#">javascript</a></li>
+		</ul>
+    </div>
 </body>
 </html>

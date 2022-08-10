@@ -3,15 +3,28 @@
 <head>
 <meta charset="utf-8">
 <title>5-1</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<style type="text/css">
 		/* 배경색지정.글자대문자 */
-		.sb{
+		.sb {
 			background:#ccc; /* 배경색을 #ccc로 지정 */
 			text-transform:uppercase; /* 영문소문자를 대문자로 전환 */
 			}
-		h2{
+		h1 {
+		   font-size: 30px;
+
+		}
+		h2 {
 			cursor: pointer;
+			transition: all 0.5s;
+			font-size: 20px;
 		}	
+		p {
+			border:2px solid transparent;
+			background-color: transparent;		
+			transition: background-color 0.4s;
+		}
+			
 	</style>
 <!-- 제이쿼리연결하기 -->
 <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
@@ -23,17 +36,19 @@
 			//객체.메서드() > $().메서드(); > $("").메서드();
 			$("h2").click(
 				function(){
-					//클릭한a에 클래스sb를 붙이시오 this addClass();
+					//클릭한 요소에 클래스sb를 붙이시오 this addClass();
 					//객체.메서드() > $().메서드(); > $("").메서드();
 					$(this).addClass("sb");
-//클릭한 a(this)의 상위요소(parent),그 상위요소를 제외한 나머지 형제요소(siblings),그 형제요소의 하위요소(children)a의 클래스sb를 제거하시오
-          $(this).parent().siblings().children("a").removeClass("sb");
+                    //클릭한 요소(this)의 상위요소(parent),그 상위요소를 제외한 나머지 형제요소(siblings),그 형제요소의 하위요소(children)a의 클래스sb를 제거하시오
+                    $(this).parent().siblings().children("h2").removeClass("sb");
 
-					//클릭한a의 다음에 오는 대상(next)을 보이게 해라
+					//클릭한요소의 다음에 오는 형제요소(next)를 보이게 해라
 					//$(this).next().show(500);
-					$(this).next().slideToggle();
+					//$(this).next().slideToggle(1000,function(){$(this).css("background-color","yellow")});
+					$(this).next().slideToggle(1000,function(){$(this).parent().css("border","2px solid red")});
+
 					//클릭한 a(this)의 상위요소(parent),그 상위요소를 제외한 나머지 형제요소(siblings),그 형제요소의 하위요소(children) p를 감춰라
-					$(this).parent().siblings().children("p").slideUp();
+					$(this).parent().siblings().children("p").slideUp(500,function(){$(this).css("background-color","transparent")});
 					//$("p").not(this).hide();
 				}
 			);
