@@ -9,6 +9,7 @@
 	function(){
 		//표준이라는 문자가 들어가는 가는 li에 클래스명 kor을 지정
 		$("li:contains('표준')").addClass("kor");
+		
 		//클래스명이 kor인 요소를 제외한 나머지 요소의 폰트를 arial로 지정
 		$("li.kor").siblings().css("font-family","arial").css("color","red");		
 		 //siblings() 탐색자는 앞요소를 제외한 형제요소(인접)를 의미(선택)
