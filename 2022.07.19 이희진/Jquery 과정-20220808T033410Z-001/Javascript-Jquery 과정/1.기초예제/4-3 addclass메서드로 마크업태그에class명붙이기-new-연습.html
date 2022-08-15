@@ -18,36 +18,39 @@
       }
     </style>
     <script src="js/jquery-1.6.2.min.js"></script>
-    <!-- <script>
-	$(document).ready(
-		function(){
-			//h1에 클래스를 붙여라(head)
-			$("h1").addClass("head");
-			$("aside").addClass("sdown");
-			//a를 클릭하면 실행하시오
-			$("a").click(
-				function(){
-					//a에 클래스를 붙이시오(head)
-					$("a").addClass("head");
-				}
-			);
-			// 공지사항 닫기클릭애니
-			$("aside button").hover(function(){
-				$("aside").removeClass("sdown");
-			});
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("aside").addClass("sdown");
+        $(".close").click(function () {
+          $("aside").toggleClass("noticeAni");
+        });
+      });
 
-			
+      // //h1에 클래스를 붙여라(head)
+      // $("h1").addClass("head");
+      // $("aside").addClass("sdown");
+      // //a를 클릭하면 실행하시오
+      // $("a").click(function () {
+      //   //a에 클래스를 붙이시오(head)
+      //   $("a").addClass("head");
+      // });
+      // // 공지사항 닫기클릭애니
+      // $("aside button").hover(function () {
+      //   $("aside").removeClass("sdown");
+      // });
 
-			$("aside button").click(function(){
-			  $("aside").toggleClass("noticeAni");
-			});
+      // $("aside button").click(function () {
+      //   $("aside").toggleClass("noticeAni");
+      // });
 
-		}
-	);
-</script> -->
-    <script>
-      $(document).ready(function () {});
+      // $(document).ready(function () {
+      //   $("aside").addClass("noticeAni");
+      //   $(".close").click(function () {
+      //     $("aside").toggleClass("noticeAni");
+      //   });
+      // });
     </script>
+
     <style type="text/css">
       aside {
         height: 80px;

@@ -1,13 +1,14 @@
 body {
-  position: relative;
 }
 
 #top {  
   position: relative;
-  background-image: none;
+  z-index: 1;
 }
 #top div.inner {    
   align-items: flex-start;
+  margin-top: 10px;
+  width: 60%;
 }
 #top div.inner h1 {
     
@@ -22,11 +23,11 @@ body {
   background-repeat: no-repeat;
 }
 #top div.inner ul.gnb {    
-  gap: 50px;
+  gap: 30px;
   /*! border: 1px solid #ccc; */
   float: left;
   position: absolute;
-  left: 420px;
+  left: 499px;
   top: 20px;
 }
 #top div.inner ul.gnb li {
@@ -40,8 +41,7 @@ body {
   
 }
 
-#top div.inner ul.gnb > a::after {
-  
+#top div.inner ul.gnb > a::after {  
   content: "";
   background-image: url(../img/ico.png);
   display: inline-block;
@@ -49,6 +49,7 @@ body {
   height: 15px;
   background-size: cover;
 }
+
 #top div.inner ul.gnb li ul {
     
 }
@@ -65,6 +66,7 @@ body {
   gap: 20px;
   padding: 20px;
 }
+
 #top div.inner .tnb a {
   
 }
@@ -77,8 +79,7 @@ body {
   display: block;
   background-size: cover;}
 
-#top div.inner .tnb a.ham {
-  
+#top div.inner .tnb a.ham {  
   display: block;
   border-top: 3px solid #000;
   border-bottom: 3px solid #000;
@@ -90,8 +91,7 @@ body {
 }
 
 #top div.inner .tnb a.ham::before {
-  content: "";
-  
+  content: "";  
   width: 100%;
   display: block;
   height: 1px;
@@ -99,8 +99,7 @@ body {
   border-top: 2px solid #000;
 }
 
-#top div.inner .tnb h2 {
-  
+#top div.inner .tnb h2 {  
   font-size: 0;
   background-image: url(../img/withposco.png);
   width: 115px;

@@ -27,24 +27,24 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 /* hn태그스타일링 */
 .h1 {
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 700;  
 }
 .h2 {
-  font-size: 54px;
+  font-size: 45px;
   font-weight: 700;
 }
 .h3 {
-  font-size: 17px;
+  font-size: 30px;
   font-weight: 700;
 }
 .h4 {
-  font-size: 27px;
+  font-size: 25px;
   font-weight: 700;
 }
 .h5 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 15px;
+/*   font-weight: 700; */
 }
 /* flex */
 .flex {
