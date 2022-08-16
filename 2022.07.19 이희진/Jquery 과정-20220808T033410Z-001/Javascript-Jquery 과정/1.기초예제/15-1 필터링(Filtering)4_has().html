@@ -15,6 +15,12 @@ ul{
 }
 
 </style>
+    <script>
+	$(document).ready(function(){
+	$("li").has("ul").css("color","#f00")
+	});
+	
+	</script>
 
 </head>
 
@@ -40,14 +46,14 @@ ul{
 </ul>
 </div>
 
-<script>
+<!-- <script>
 
 /*$("li").has("ul")
 li 중에서 ul을 포함한(가지고 있는) li만 선택*/
 // has안에는 마크업태그가 놓여진다
 $("li").has("ul").css("color","#f00")
 
-</script>
+</script> -->
 
 </body>
 </html>

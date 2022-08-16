@@ -18,17 +18,28 @@ ul{
 	$(document).ready(
 		function(){
 				/*
-				ul을 가지고 있는 li에 스타일을 지정하시오(배경색지정)
-				$("li").has("ul").css("background","gray");
-				*/
-				$("li").has("ul").append("<i class='ion-arrow-down-b'></i>");
+				//ul을 가지고 있는 li에 스타일을 지정하시오(배경색지정)
+				//$("li").has("ul").css("background","gray");
+				
+				//$("li").has("ul").prepend("<i class='ion-arrow-down-c'></i>");
+				$("li").has("ul").children("ul").before("<i class='ion-arrow-down-c'></i>");
+
 				$("li").has("ul").children("ul").hide();
 				//ul을 가지고 있는 li를 클릭하면 실행하시오(클릭한li의 ul을 slideToggle하시오)
 				$("li").has("ul").click(
 						function(){
-							$(this).children("ul").slideDown();
+							$(this).children("ul").slideToggle();
 						}
 				);
+				*/
+				$("li").has("ul").children("ul").before("<i class='ion-arrow-down-a'></i>");
+				$("li").has("ul").children("ul").hide();
+				$("li").has("ul").click(function(){						
+					$(this).children("ul").slideToggle();
+					$(this).siblings().chidren("ul").slideUp();
+				    
+					
+				});
 		}
 	);
 </script>
@@ -56,6 +67,9 @@ ul{
 				<li>4-1</li>
 				<li>4-2</li>
 			</ul>
+		</li>
+		<li>5
+			
 		</li>
     </ul>
 </div>
