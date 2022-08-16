@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pf2 : urbanlaunderette</title>
+<<<<<<< HEAD
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
@@ -90,6 +91,79 @@
           return false;
         });
       });
+=======
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/ham.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //console.log($(window).height());
+            let n=0; //변수 let에 0을 넣어라 (변수선언과 초기화)
+            let winW=$(window).width();
+            let winH=$(window).height();
+            $("header .inner .wgnb a.ham").click(function(){
+
+               if(n==0){ //n의 들어있는 값이 0과 같다
+                    console.log(n);
+                    $("div.menuback").remove();
+                    $("#top").prepend("<div class='menuback'></div>");
+                    $(".menuback").css({"height":winH});
+                    n=1;
+                    console.log("클릭한이후의 n값:"+n);
+               }
+               else{
+                    console.log(n);
+
+                    $(".wrapgnb ul.gnb > li h2 a,.wrapgnb ul.gnb >li ul li a").toggleClass("translateY");
+                    setTimeout(function(){
+                        $(".menuback").addClass("menubackmove");
+                    },2000);
+                    
+                    n=0;
+                    console.log("두번째 클릭한이후의 n값:"+n);
+               }
+
+               // 햄버거클릭시 메뉴보이게 하기
+               $(".wrapgnb").remove();
+               $(".menuback").append("<div class='wrapgnb'></div>");
+               $("#top .gnb").appendTo(".wrapgnb").show(500,function(){
+                $(".wrapgnb ul.gnb > li h2 a,.wrapgnb ul.gnb >li ul li a").toggleClass("translateY"); //메뉴등장
+               });
+
+               $(".wrapgnb .gnb").clone().appendTo(".wgnb");
+               $(".wrapgnb").css({"height":winH,"width":winW});
+               
+
+               // 하단 카피라이트와 SNS배치.애니
+               $(".wrapsns").remove();
+               $(".menuback").append("<p class='copyright'>© 2020 URBAN LAUNDERETTE. ALL RIGHTS RESERVED. Designed by <a href='https://studio-jt.co.kr/' target='_blank'>STUDIO-JT</a>.</p>");
+               $("footer div.inner .right ul.sns").clone().appendTo(".menuback");
+               $(".menuback .copyright").wrapInner("<span></span>");
+               $(".menuback .copyright,.menuback .sns").wrapAll("<div class='wrapsns'></div>");
+               $(".wrapsns").css({"width":winW,"padding-left":winW*0.15,"padding-right":winW*0.15});
+               setTimeout(function(){
+                $(".wrapsns>*>*").toggleClass("translateY");
+               },1000);
+               
+
+               return false;
+
+
+            });
+            
+
+        });
+>>>>>>> feature/temp
     </script>
   </head>
   <body>
