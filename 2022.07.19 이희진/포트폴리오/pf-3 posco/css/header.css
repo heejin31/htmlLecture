@@ -1,8 +1,5 @@
 body {
-<<<<<<< HEAD
-=======
 /*   position: relative; */
->>>>>>> feature/temp
 }
 
 #top {  
@@ -11,12 +8,9 @@ body {
 }
 #top div.inner {    
   align-items: flex-start;
-<<<<<<< HEAD
   margin-top: 10px;
   width: 60%;
-=======
   margin-top: 20px;
->>>>>>> feature/temp
 }
 #top div.inner h1 {
     

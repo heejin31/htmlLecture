@@ -1,0 +1,51 @@
+.slick-prev, .slick-next { 
+  width: 45px;
+  height: 45px;
+  border: 6px solid #333;
+  transform: rotate(45deg);
+  z-index:2;
+}
+
+.slick-prev {  
+  left: 0px;
+  border-top: transparent;
+  border-right:transparent; 
+  
+}
+
+.slick-next {  
+  right: 0px;  
+  border-bottom: transparent;
+  border-left:transparent; 
+}
+
+.slick-prev::before, .slick-next::before {
+  color: #333;
+  font-size: 40px;    
+  content: ""; /* 임의 화살표모양 없애줌*/
+}
+
+.slick-prev::before {  
+ 
+}
+
+.slick-next::before {  
+  
+}
+
+.slick-dots {  
+  bottom: 35px;
+  position: initial;
+}
+
+.slick-dots li button::before {  /*아래 동그란버튼의 크기 및 색상변경*/
+  font-size: 15px;
+  transition: transform 0.5s, color 0.5s, opacity 0.5s;
+}
+
+.slick-dots li.slick-active button::before { /*눌러진 동그란 버튼의 크기 및 색상변경*/
+  color: red;
+  opacity: 0.75;
+  font-size: 20px;
+  transform: scale(1.4); /* 위치 정중앙*/
+}

@@ -1,167 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<style>
-		img {
-			transform-origin: 50% 50%;
-			transform: scale(1);
-			transition: all 0.5s;
-		}
+  <head>
+    <style>
+      img {
+        transform-origin: 50% 50%;
+        transform: scale(1);
+        transition: all 0.5s; /*크기가 원래대로*/
+      }
 
-		.scale{
-			transform: scale(0);
-		}
-		.popupwrap {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0,0,0,0.6);
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-        }
+      .scale {
+        transform: scale(0); /* 크기가 0이므로 사라짐 */
+      }
+      .popupwrap {
+        /* popup을 중앙배치하기위해 만든 div */
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
 
+      .popup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: box-shadow 1s;
+      }
 
-		.popup {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			transition: box-shadow 1s;
+      .popup img {
+      }
+      .popup button {
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $("p").hide(500);
+        });
+        $("#show").click(function () {
+          $("p").toggle(500);
+        });
+        $("#imghide").click(function () {
+          $("img").toggleClass("scale");
+        });
+        $(".close").click(function () {
+          $(".popupwrap").toggleClass("scale");
+        });
 
-		}
+        //팝업창
+        $("div.popup").wrap("<div class='popupwrap'></div>");
+        $(".popupwrap")
+          .hide() //fadein효과 보려고 사용
+          .fadeIn(500, function () {
+            //0.5초뒤에 나타나는데 그동안 그림도 감춰주기 위해 맨 아래 popup:hide를 사용함
+            //메서드체인(메서드를 연결시키서 사용)
+            $(".popup").slideDown(500, function () {
+              //0.5초뒤에 슬라이드 다운으로 나타남
+              $(this).css("box-shadow", "0 0 10px #fff");
+            });
+          });
+        $(".popup").hide();
 
-		.popup img {
-
-		}
-		.popup button {
-
-		}
-	
-
-	</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $("p").hide(500);
-  });
-  $("#show").click(function(){
-    $("p").toggle(500);
-  });
-  $("#imghide").click(function(){
-    $("img").toggleClass("scale");
-  });
-  $(".close").click(function(){
-	$("").toggleClass("scale");
-
-  });
-
-  //팝업창
-   $("div.popup").wrap("<div class='popupwrap'></div>");
-   $(".popupwrap").hide().fadeIn(500,function(){  //메서드체인(메서드를 연결시키서 사용)
-	$(".popup").slideDown(500,function(){
-		$(this).css("box-shadow","0 0 10px #fff")
-	});
-   }); 
-   $(".popup").hide();
-
-   //버튼 감싸기
-   $(".im").wrapAll("<span></span>"); // class="im" 인 것들을 span태그로 묶기
-
-});
-</script>
-
-</head>
-<body>
-	<div class="popup">
-       <img src="https://images.unsplash.com/photo-1660108243103-dcb9d9cc4d46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-       <button class="close">닫기</button>
+        //버튼 감싸기
+        $(".im").wrapAll("<span></span>"); // class="im" 인 것들을 span태그로 묶기
+      });
+    </script>
+  </head>
+  <body>
+    <div class="popup">
+      <img
+        src="https://images.unsplash.com/photo-1660108243103-dcb9d9cc4d46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+        alt=""
+      />
+      <button class="close">닫기</button>
     </div>
-<p>If you click on the "Hide" button, I will disappear.</p>
-<img src="https://images.unsplash.com/photo-1660108243103-dcb9d9cc4d46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-<button id="hide" class="im">Hide</button>
-<button id="show" class="im">show</button>
-<button id="imghide">이미지감추기</button>
-
-</body>
-</html>
-
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-	<style type="text/css">
-	 /*a태그의 스타일지정: 밑줄없애고 글자색지정*/
-	 *{
-		margin: 0;
-		padding:0;
-	 }
-	 ul{
-		 list-style: none;
-	 }
-	 a{
-		 text-decoration:none;
-		 color:#333;
-		 }
-	 /*a:hover의 스타일 지정: 글자색 지정*/
-	 a:hover{
-		 color:#F60;
-		 }
-	.click{
-		color:#F60;
-		background-color: #eee;
-		}
-	.noclick{
-		color:#333;
-		font-style:italic;
-		}
-	</style>
-<script src="js/jquery-1.6.2.min.js"></script>
-
-<script>
-	$(document).ready(
-		function(){
-			//첫번째li의a에 클래스를 붙여라(클래스명click)
-			$("li:first a").addClass("click");
-			$("li img").hide();
-			$("li:first img").show();
-
-			/*li의 a를 클릭하면 실행하시오
-			(클릭한 a에 클래스를 붙이고 다른 li의 a는 클래스를 없애시오) */
-			$("li a").click(
-				function(){
-					$(this).addClass("click");
-					$(this).parent().siblings().children("a").removeClass("click");
-					$(this).next().show();
-					$(this).parent().siblings().children("img").hide();
-				}
-			);
-
-		}
-	);
-</script>
-</head>
-
-<body>
-	<div>
-	<h3>웹표준기술</h3>
-	<ul>       
-        <li>
-		<a href="#">html</a>
-		<img src="https://via.placeholder.com/150/ff00FF/808080 ?Text=Digital.com" alt="">
-		</li>
-		<li>
-			<a href="#">css</a>
-			<img src="https://via.placeholder.com/150/0000FF/808080 ?Text=Digital.com" alt="">
-		</li>
-		<li>
-			<a href="#">javascript</a>
-			<img src="https://via.placeholder.com/150/00ffFF/808080 ?Text=Digital.com" alt="">
-		</li>
-    </ul>
-</div>
-</body>
+    <p>If you click on the "Hide" button, I will disappear.</p>
+    <img
+      src="https://images.unsplash.com/photo-1660108243103-dcb9d9cc4d46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+      alt=""
+    />
+    <button id="hide" class="im">Hide</button>
+    <button id="show" class="im">show</button>
+    <button id="imghide">이미지감추기</button>
+  </body>
 </html>

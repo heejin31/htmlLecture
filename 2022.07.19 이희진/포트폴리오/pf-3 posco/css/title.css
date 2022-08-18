@@ -1,41 +1,29 @@
-<<<<<<< HEAD
 #title {
   height: 100%; 
-=======
+}
+
 /* #title::before {
   content: "";
   height: 100%;
   width: 100%;
->>>>>>> feature/temp
   background-image: url(../img/main1.jpg);
   background-size: cover;
   min-height: 700px;
   margin-top: -100px;
-<<<<<<< HEAD
-=======
   z-index: -1;
 } */
 
 #title {
   height: 100%;
- 
   background-image: url(../img/main1.jpg);
   background-size: cover;
-  min-height: 700px;
-  margin-top: -100px;
-  z-index: -2;
->>>>>>> feature/temp
+  min-height: 900px;
+  margin-top: -200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;  
-<<<<<<< HEAD
-=======
-  
-    
- 
- 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,52 +32,43 @@
   position: relative;
 }
  
->>>>>>> feature/temp
-}
 
 #title div.work {
-
-<<<<<<< HEAD
   width: 60%;
-  height: 255px;
-=======
-
-
->>>>>>> feature/temp
+  position: absolute;
+  top: 248px;
 }
 
 #title div.work p {
-
-<<<<<<< HEAD
   margin: 35px;
   margin-left: 0;
-=======
->>>>>>> feature/temp
 }
 
 #title div.work a {
   display: block;
   border: 1px solid #999;
-<<<<<<< HEAD
-  width: 130px;
-  height: 40px;
-  line-height: 2.5;  
-=======
   width: 150px;
   height: 50px;
   line-height: 3;  
->>>>>>> feature/temp
   text-align: center;
 }
 
 #title div.bar {
-
-<<<<<<< HEAD
   display: inline-flex;
   gap: 60px;
   font-size: 10px;
   width: 60%;
   height: 230px;
-=======
->>>>>>> feature/temp
+  position: absolute;
+  top: 550px;
+  left: 450px;
+}
+
+#title div.bar::after {
+  content: "";
+  border-bottom: 1px solid #999;
+  width: 400px;
+  position: absolute;
+  top: 30px;
+  left: -30px;
 }

@@ -1,67 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>조건문</title>
-	<style>
-	*{
-		margin:0;
-		padding:0;
-		}
-	body>div{
-		outline:2px solid black;
-		width:720px;
-		overflow:hidden;
-		margin:0 auto;
-		}
-		div div{
-			width:200px;
-			height:200px;
-			background:#ccc;
-			margin:0 20px;
-			cursor:pointer;
-			transition:background 0.5s;
-			float:left;
-			text-align:center;
-			line-height:200px;
-			outline:1px solid red;
-		}
-		.over1{
-			background:#F00;
-		}
-		.over2{
-			background: #669;
-		}
-		.over3{
-			background: #093;
-		}
+  <head>
+    <meta charset="utf-8" />
+    <title>조건문</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body > div {
+        outline: 2px solid black;
+        width: 720px;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+      div div {
+        width: 200px;
+        height: 200px;
+        background: #ccc;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: background 0.5s;
+        float: left;
+        text-align: center;
+        line-height: 200px;
+        outline: 1px solid red;
+      }
+      .over1 {
+        background: #f00;
+      }
+      .over2 {
+        background: #669;
+      }
+      .over3 {
+        background: #093;
+      }
     </style>
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script>
-		$(document).ready(
-			function(){
-				$("div div").hover(
-					function(){
-						n=$(this).attr("data-n")
-						change="over"+n;
-						$(this).addClass(change);
-					},
-					function(){
-						$(this).removeClass(change);
-					}
-					
-				);
+      $(document).ready(function () {
+        $("div div").hover(
+          function () {
+            n = $(this).attr("data-n");
+            let change = "over" + n; //{}안에 let키워드없이 사용시 전역변수로 사용됨
+            $(this).addClass(change);
+            $(this).append("<span></span>");
+            m = $(this).attr("data-explain");
+            $(this).children("span").text(m);
+          },
+          function () {
+            $(this).removeClass(change);
+            $(this).children("span").remove();
+          }
+        );
+      });
+    </script>
+  </head>
 
-			}
-		);
-	</script>
-</head>
-
-<body>
+  <body>
     <div>
-        <div id="box1" data-n="1">box1</div>
-        <div id="box2" data-n="2">box2</div>
-        <div id="box3" data-n="3">box1</div>
+      <div id="box1" data-n="1" data-explain="수해복구현장사진입니다.">
+        box1
+      </div>
+      <div id="box2" data-n="2">box2</div>
+      <div id="box3" data-n="3">box1</div>
     </div>
-</body>
+  </body>
 </html>

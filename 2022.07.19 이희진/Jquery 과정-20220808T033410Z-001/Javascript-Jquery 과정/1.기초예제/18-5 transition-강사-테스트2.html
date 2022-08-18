@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>조건문</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .gallery {
+        width: 800px;
+        margin: 0 auto;
+        /*! border:1px solid #ccc; */
+      }
+      h1 {
+        text-align: center;
+      }
+      #show {
+        height: 500px;
+        background-size: cover;
+      }
+      #show ul {
+        list-style: none;
+        position: relative;
+      }
+      #show ul li {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .list {
+        list-style: none;
+        text-align: center;
+        margin-bottom: 30px;
+        display: block;
+      }
+      a {
+        display: inline-block;
+        width: 18%;
+        background-color: #f2f2f2;
+      }
+    </style>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("li:not(:first)").hide();
+        let n;
+        $("span a").click(function () {
+          //   n = $(this).attr("data-n");
+          //   $("#show ul li:nth-child(" + n + ")").show();
+          //   $("#show ul li:nth-child(" + n + ")")
+          //     .siblings()
+          //     .hide();
+          n = $(this).index();
+          console.log(n);
+          $("#show ul li:eq(" + n + ")").fadeIn();
+          $("#show ul li:eq(" + n + ")")
+            .siblings()
+            .fadeOut();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="gallery">
+      <h1>작품갤러리</h1>
+      <span class="list">
+        <a href="#" data-n="1">작품1</a>
+        <a href="#" data-n="2">작품2</a>
+        <a href="#" data-n="3">작품3</a>
+        <a href="#" data-n="4">작품4</a>
+        <a href="#" data-n="5">작품5</a>
+      </span>
+      <div id="show">
+        <ul>
+          <li>
+            <img
+              src="https://images.unsplash.com/photo-1593642702909-dec73df255d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.unsplash.com/photo-1598310072808-fd966f121e7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.unsplash.com/photo-1598330460669-c3b4ad3ae2d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.unsplash.com/photo-1598307754921-da47ead0ad5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.unsplash.com/photo-1598276039467-f65d6b28ae2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

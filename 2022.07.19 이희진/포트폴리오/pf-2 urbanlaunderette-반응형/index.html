@@ -24,7 +24,34 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/ham.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <link rel="stylesheet" href="css/slick-modify.css" />
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slide").slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          vertical: true,
+        });
+      });
+    </script>
     <script type="text/javascript">
       $(document).ready(function () {
         //console.log($(window).height());
@@ -33,6 +60,7 @@
         let winW = $(window).width();
         console.log("현재 width값 :" + winW);
         let winH = $(window).height();
+        console.log("초기윈도우너비:" + winW + "/ 초기윈도우 높이:" + winH);
         $("header .inner .wgnb a.ham").click(function () {
           if (n == 0) {
             //n의 들어있는 값이 0과 같다
@@ -50,7 +78,6 @@
             setTimeout(function () {
               $(".menuback").addClass("menubackmove");
             }, 2000);
-
             n = 0;
             console.log("두번째 클릭한이후의 n값:" + n);
           }
@@ -65,7 +92,6 @@
                 ".wrapgnb ul.gnb > li h2 a,.wrapgnb ul.gnb >li ul li a"
               ).toggleClass("translateY"); //메뉴등장
             });
-
           $(".wrapgnb .gnb").clone().appendTo(".wgnb");
           $(".wrapgnb").css({ height: winH, width: winW });
 
@@ -89,6 +115,33 @@
           }, 1000);
 
           return false;
+        });
+        // 창사이즈 조절 resize
+        $(window).resize(function () {
+          //resize이벤트 : 윈도우창사이즈를 조절할때 발생하는 이벤트
+          winW = $(window).width();
+          winH = $(window).height();
+          $(".menuback").css({ height: winH });
+          $(".wrapgnb").css({ height: winH, width: winW });
+          $(".wrapsns").css({
+            width: winW,
+            "padding-left": winW * 0.15,
+            "padding-right": winW * 0.15,
+          });
+          console.log("윈도우너비:" + winW + "/ 윈도우 높이:" + winH);
+        });
+        //$(window).on("이벤트명",function(){});
+        $(window).on("resize", function () {
+          winW = $(window).width();
+          winH = $(window).height();
+          $(".menuback").css({ height: winH });
+          $(".wrapgnb").css({ height: winH, width: winW });
+          $(".wrapsns").css({
+            width: winW,
+            "padding-left": winW * 0.15,
+            "padding-right": winW * 0.15,
+          });
+          console.log("윈도우너비:" + winW + "/ 윈도우 높이:" + winH);
         });
       });
 =======

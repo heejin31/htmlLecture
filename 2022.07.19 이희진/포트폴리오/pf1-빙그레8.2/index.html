@@ -35,7 +35,7 @@
       });
 
       $(document).ready(function () {
-        /* 빙그레맛 리스트 오버*/
+        /* 빙그레맛 리스트 마우스오버처리*/
         $("#taste .inner ul.list li a").hover(
           function () {
             $(this).parent().css("box-shadow", "2px 2px 5px #ccc"); //this: 이벤트가 발생한 요소를 의미
@@ -45,7 +45,7 @@
             $(this).parent().css("box-shadow", "initial");
           }
         );
-        /* 사이버 신고 안정신문고 오버처리 */
+        /* 사이버 신고 안정신문고 마우스오버처리 */
         $("#community .inner > article > a").hover(
           function () {
             $(this).parent().addClass("border");

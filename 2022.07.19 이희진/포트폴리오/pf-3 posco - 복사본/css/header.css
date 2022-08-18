@@ -1,0 +1,139 @@
+body {
+}
+
+#top {  
+  position: relative;
+  z-index: 1;
+}
+#top div.inner {    
+  align-items: flex-start;
+  width: 60%;
+}
+#top div.inner h1 {
+    
+}
+#top div.inner h1 a {    
+  font-size: 0;
+  display: block;
+  background-image: url(../img/posco.svg);
+  width: 100px;
+  height: 66px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#top div.inner ul.gnb {    
+  gap: 30px;
+  /*! border: 1px solid #ccc; */
+  float: left;
+  position: absolute;
+  left: 499px;
+  top: 20px;
+}
+#top div.inner ul.gnb li {
+    
+}
+#top div.inner ul.gnb li a {
+    
+}
+
+#top div.inner ul.gnb>a {
+  
+}
+
+#top div.inner ul.gnb > a::after {  
+  content: "";
+  background-image: url(../img/ico.png);
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-size: cover;
+}
+
+#top div.inner ul.gnb li ul {
+    
+}
+#top div.inner ul.gnb li ul li {
+    
+}
+#top div.inner ul.gnb li ul li a {
+    
+}
+
+#top div.inner .tnb {  
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 20px;
+}
+
+#top div.inner .tnb a {
+  
+}
+
+#top div.inner .tnb a:nth-of-type(2) {  
+  background-image: url(../img/search.svg);
+  width: 20px;
+  width: 20px;
+  font-size: 0;
+  display: block;
+  background-size: cover;}
+
+#top div.inner .tnb a.ham {  
+  display: block;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  font-size: 0;
+  width: 25px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#top div.inner .tnb a.ham::before {
+  content: "";  
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: #000;
+  border-top: 2px solid #000;
+}
+
+#top div.inner .tnb h2 {  
+  font-size: 0;
+  background-image: url(../img/withposco.png);
+  width: 115px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* #top div.inner div.panel {
+  position: fixed;
+  width: 100%;
+  top: 80px;
+  left: 0;
+  background: #fff;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #ccc;
+  z-index: 100;
+} */
+
+
+#top div.inner div div.container {
+  display: table;
+  position: relative;
+}
+
+#top div.inner div div.container div.col {
+  display: table-cell;
+  width: 25%;
+  padding: 30px 0;
+}
+
+#top div.inner ul.gnb li div.container dl {
+  display: none;
+}
+
+#top div.inner ul.gnb li h2:hover + div.panel div.container div.col dl {
+  display: block;
+}
