@@ -1,0 +1,53 @@
+#title {
+  height: 115%; 
+  background-image: url(../img/main1.jpg);
+  background-size: cover;
+  min-height: 900px;
+  margin-top: -200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;  
+  margin-bottom: 300px;
+}
+
+#title div.work {
+  width: 60%;
+  position: absolute;
+  top: 248px;
+}
+
+#title div.work p {
+
+  margin: 35px;
+  margin-left: 0;
+}
+
+#title div.work a {
+  display: block;
+  border: 1px solid #999;
+  width: 130px;
+  height: 40px;
+  line-height: 2.5;  
+  text-align: center;
+}
+
+#title div.bar {
+  display: inline-flex;
+  gap: 60px;
+  font-size: 10px;
+  width: 60%;
+  position: absolute;
+  top: 550px;
+  left: 450px;
+}
+
+#title div.bar::after {
+  content: "";
+  border-bottom: 1px solid #999;
+  width: 400px;
+  position: absolute;
+  top: 30px;
+  left: -30px;
+}

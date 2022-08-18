@@ -8,12 +8,14 @@
 
 </style>
 	<script type="text/javascript">
-		// $(document).ready(function(){
-		// 	var ar=["10억","연인","피부미남"];
-		//   alert(ar[2]);
-		// 	ar[2]="남북통일";
-		// 	alert(ar[2]);
-		// });
+		$(document).ready(function(){
+			const ar=["10억","연인","피부미남"]; //배열선언 const 이름 = [];
+			//const는 상수: 값이 변하지 않는 그릇
+			//배열이란 여러개의 값을 담을 수 있는 그릇
+			console.log(ar[0]); //ar[0] 배열ar의 0번요소를 가져오시오
+			//배열의 요소 순서는 0부터 시작한다
+			
+		});
 	</script>
 </head>
 
@@ -28,6 +30,7 @@
 <script>
 $(document).ready(function(){
 	var a="전역변수";
+	var b="지역변수";
 	$("#btn1").click(function(){
 		alert(a);	 //경고창을 띄워라  숫자는 따옴표 뺌
 		var b="지역변수";
@@ -39,7 +42,7 @@ $(document).ready(function(){
 
 	});
 	$("#btn3").click(function(){
-		alert(sc);	//문자는 "" 따옴표 넣음
+		alert(sc);	//문자는 "" 따옴표 넣음 
 
 	});
 });

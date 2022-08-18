@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pf3:POSCO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/title.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slide").slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          variableWidth: false,
+          autoplay: true,
+          autoplaySpeed: 2500,
+        });
+
+        $("#bar_1").click(function () {
+          $("#title").css("background-image", "url(img/main1.jpg)");
+        });
+        $("#bar_2").click(function () {
+          $("#title").css("background-image", "url(img/main2.jpg)");
+        });
+        $("#bar_3").click(function () {
+          $("#title").css("background-image", "url(img/main3.jpg)");
+        });
+      });
+    </script>
+    <style>
+      .slick-wrap {
+        width: 100%;
+        position: relative;
+        left: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 상단영역 -->
+    <header id="top">
+      <div class="inner flex flexBetween">
+        <h1><a href="">포스코</a></h1>
+        <ul class="gnb flex">
+          <li>
+            <h2><a href="#">회사소개</a></h2>
+            <!-- 1 step  -->
+            <div class="panel">
+              <!-- 2 step -->
+              <div class="container">
+                <!-- 3-1 step -->
+                <div class="col">
+                  <dl>
+                    <dt><a href="" class="h3">비전</a></dt>
+                    <dt><a href="" class="h3">대표이사메시지</a></dt>
+                    <dt><a href="" class="h3">포스코 CI</a></dt>
+                    <dt><a href="" class="h3">역사</a></dt>
+                  </dl>
+                </div>
+                <!-- 3-1 step -->
+                <!-- 3-2 step -->
+                <div class="col">
+                  <dl>
+                    <dt><a href="" class="h3">그룹사</a></dt>
+                    <dt><a href="" class="h3">포스코 해외법인</a></dt>
+                    <dt><a href="" class="h3">포스코그룹 브로슈어</a></dt>
+                  </dl>
+                </div>
+                <!-- 3-2 step -->
+              </div>
+              <!-- 2 step -->
+            </div>
+            <!-- 1 step  -->
+          </li>
+          <li>
+            <h2><a href="">제품</a></h2>
+            <ul class="hide">
+              <li><a href="" class="h3">제품</a></li>
+            </ul>
+            <ul class="hide">
+              <li><a href="" class="h3">친환경브랜드</a></li>
+              <li><a href="">INNOVILT(이노빌트)</a></li>
+              <li><a href="">e Autopos(이 오토포스)</a></li>
+              <li><a href="">Greenable(그린어블)</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2><a href="">ESG</a></h2>
+
+            <ul class="hide">
+              <li><a href="" class="h3">전략 및 정책</a></li>
+              <li><a href="">EGS정책/가이드라인</a></li>
+              <li><a href="">환경경영</a></li>
+              <li><a href="">안전보건경영</a></li>
+              <li><a href="">윤리경영</a></li>
+              <li><a href="">공정거래</a></li>
+              <li><a href="">지배구조</a></li>
+              <li><a href="">지속가능 공급망</a></li>
+            </ul>
+            <ul class="hide">
+              <li><a href="" class="h3">보고서</a></li>
+              <li><a href="">기업시민보고서</a></li>
+              <li><a href="">기후행동보고서</a></li>
+              <li><a href="">책임광물보고서</a></li>
+            </ul>
+            <ul class="hide">
+              <li><a href="" class="h3">인증서</a></li>
+              <li><a href="">안전인증서</a></li>
+              <li><a href="">환경인증서</a></li>
+              <li><a href="">품질인증서</a></li>
+              <li><a href="">보안인증서</a></li>
+            </ul>
+            <ul class="hide">
+              <li><a href="" class="h3">이니셔티브</a></li>
+              <li><a href="">글로벌 이니셔티브</a></li>
+              <li><a href="">외부 수상</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2><a href="">투자자정보</a></h2>
+
+            <ul class="hide">
+              <li><a href="">공고</a></li>
+            </ul>
+            <ul class="hide">
+              <li><a href="">재무정보</a></li>
+              <li><a href="">신용등급</a></li>
+            </ul>
+            <ul class="hide">
+              <li><a href="">IR 자료실</a></li>
+              <li><a href="">감사보고서</a></li>
+              <li><a href="">사업보고서</a></li>
+            </ul>
+            <ul class="hide">
+              <li><a href="">공시</a></li>
+              <li><a href="">국내공시</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2><a href="">홍보채널</a></h2>
+
+            <ul class="hide">
+              <li><a href="">포스코 뉴스룸</a></li>
+              <li><a href="">미디어라이브러리</a></li>
+              <li><a href="">홍보영상</a></li>
+              <li><a href="">광고영상</a></li>
+              <li><a href="">인쇄광고</a></li>
+            </ul>
+            <ul class="hide">
+              <li><a href="">문화행사</a></li>
+              <li>문화행사안내</li>
+              <li>포항</li>
+              <li>광양</li>
+              <li>서울</li>
+            </ul>
+            <ul class="hide">
+              <li><a href="">견학신청</a></li>
+              <li><a href="">견학안내</a></li>
+              <li><a href="">Park1538</a></li>
+              <li><a href="">광양제철소</a></li>
+              <li><a href="">글로벌 안전센터</a></li>
+              <li><a href="">견학예약 확인/변경</a></li>
+              <li><a href="">견학소감</a></li>
+            </ul>
+            <ul class="hide">
+              <li><a href="">Park1538</a></li>
+              <li><a href="">포스코 미술관</a></li>
+              <li><a href="">포스코 역사관</a></li>
+              <li><a href="">포스코 소통보드</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2><a href="">기업시민</a></h2>
+          </li>
+        </ul>
+
+        <div class="tnb">
+          <button>Day</button>
+          <select name="lang">
+            <option value="KOREA" selected>KOR</option>
+            <option value="ENGLISH">ENG</option>
+          </select>
+          <a href="">로그인</a>
+          <a href="">검색</a>
+          <a href="" class="ham">전체메뉴</a>
+          <h2>포스코 로고</h2>
+        </div>
+      </div>
+    </header>
+
+    <!-- 타이틀영역 -->
+    <div id="title">
+      <div class="work">
+        <p class="h2">스페이스워크</p>
+        <p class="h5">철과 빛의 도시,포항의 새로온 랜드마크</p>
+        <a href="">자세히보기</a>
+      </div>
+      <div class="bar">
+        <p style="cursor: pointer" id="bar_1">스페이스워크</p>
+        <p style="cursor: pointer" id="bar_2">Park1538</p>
+        <p style="cursor: pointer" id="bar_3">체인지업 그라운드</p>
+      </div>
+    </div>
+
+    <!-- 내용영역 -->
+    <main>
+      <!-- 1st -->
+      <!-- section#products>div.inner>div.wrap>(h2+p)>div -->
+      <section id="products">
+        <div class="inner">
+          <div class="wrap">
+            <div class="po">
+              <h2 class="h3">POSCO PRODUCTS</h2>
+              <p>
+                혁신적인 제품개발과 이용기술을 통한 고객가치 향상을 실현합니다.
+              </p>
+            </div>
+            <div class="slick-wrap">
+              <div class="photo slide">
+                <div class="text-on-img">
+                  <div class="background-wrap1">
+                    <div>
+                      <a href="">INDUSTRIES</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-on-img">
+                  <div class="background-wrap2">
+                    <div>
+                      <a href="">PRODUCTS</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-on-img">
+                  <div class="background-wrap3">
+                    <div>
+                      <a href="">MEGA TREND</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-on-img">
+                  <div class="background-wrap4">
+                    <div>
+                      <a href="">APPLICATION TECHNOLOGY</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-on-img">
+                  <div class="background-wrap5">
+                    <div>
+                      <a href="">INNOVILT (이노빌트)</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-on-img">
+                  <div class="background-wrap6">
+                    <div>
+                      <a href="">e Autopos (이 오토퍼스)</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-on-img">
+                  <div class="background-wrap7">
+                    <div>
+                      <a href="">Greenable (그린어블)</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button>
+              <div class="sildeCount">
+                <span class="sildeCountItem">01</span>
+                <span class="sildeCount_bar">/</span>
+                <span class="sildeCountAll">07</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- 2nd -->
+      <section id="esg">
+        <!-- div>(div>h3+p)+div+(div>h3+p)+a -->
+        <div class="inner">
+          <div class="esg">
+            <h3 class="h3">ESG</h3>
+            <p>
+              투명하고 책임감있는 ESG 경영을 통한 기업시민 포스코
+              실현하겠습니다.
+            </p>
+          </div>
+          <div class="img">
+            <img src="img/esg_slide_01.jpg" />
+          </div>
+          <div class="report">
+            <h3>기업시민보고서</h3>
+            <p>
+              지속가능한 미래를 위한 포스코의 '기업시민'경영이념과 그에 맞춘<br />
+              Business,Society,People 분야의 성과를 담았습니다.
+            </p>
+          </div>
+          <a href="">자세히보기</a>
+        </div>
+      </section>
+      <!-- 3rd -->
+      <!-- div#bottom>(div>h2)+(div>img+a+p)+a -->
+      <section id="bottom">
+        <div class="msg flex">
+          <div>
+            <h2 class="h2"># 포스코그룹의 소식을 전합니다</h2>
+          </div>
+          <div class="ani">
+            <img src="" alt="" />
+            <a href=""></a>
+            <a href=""></a>
+
+            <img src="" alt="" />
+            <a href=""></a>
+            <a href=""></a>
+
+            <img src="" alt="" />
+            <a href=""></a>
+            <a href=""></a>
+
+            <img src="" alt="" />
+            <a href=""></a>
+            <a href=""></a>
+
+            <img src="" alt="" />
+            <a href=""></a>
+            <a href=""></a>
+
+            <img src="" alt="" />
+            <a href=""></a>
+            <a href=""></a>
+
+            <img src="" alt="" />
+            <a href=""></a>
+            <a href=""></a>
+
+            <img src="" alt="" />
+            <a href=""></a>
+            <a href=""></a>
+
+            <img src="" alt="" />
+            <a href=""></a>
+            <a href=""></a>
+
+            <img src="" alt="" />
+            <a href=""></a>
+            <a href=""></a>
+          </div>
+          <a href="">POSCO Newsroom 바로가기</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- 하단영역 -->
+    <footer></footer>
+  </body>
+</html>

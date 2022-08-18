@@ -1,34 +1,31 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 
-<style>
-div{
-	width:100px;
-	height:100px;
-	background:#ccc;
-	margin-top:20px;
-	cursor:pointer;
-}
-</style>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: #ccc;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
 
-</head>
+  <body>
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
 
-<body>
-
-<div id="box1">box1</div>
-<div id="box2">box2</div>
-
-
-<script>
+    <!-- <script>
 
 
 $("#box1").click(function(){
 	//var n;
-	n=7; // = 대입연산자
+	n=7; // = 대입연산자 
 	change1(); // 사용자메서드(사용자가 만든 함수)  함수는? 명령어모음(내가만든 메서드)
 
 });
@@ -47,10 +44,17 @@ function change1(){ // n의 값이 5보다 크다면 {}중괄호안의 내용을
 	}
 }
 
-</script>
-</body>
-</html>
+</script> -->
 
+    <script>
+      var num = prompt("0 이상의 숫자를 입력하세요.", "ex)1");
+
+      if (num >= 0) {
+        document.write("입력한 숫자는 0 또는 양수입니다.");
+      }
+    </script>
+  </body>
+</html>
 
 <!--
 if 문    -   조건문   ->  조건에 맞으면 true(참)	- { } 안의 명령이 실행
@@ -59,4 +63,4 @@ if 문    -   조건문   ->  조건에 맞으면 true(참)	- { } 안의 명령�
 if(조건){
 	명령
 } 
--->                               
+-->
