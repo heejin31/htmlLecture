@@ -1,4 +1,127 @@
+footer {
+  border-top: 1px solid #ccc;
+  position: relative;
+  z-index: 3;
+}
 
+footer .total {
 
+  width: 60%;
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+footer .total .top {
+
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .total .top dt {
+  font-weight: 600;
+  margin: 20px 0;
+  
+  /*! width: 100%; */
+}
+
+footer .total .top dd {
+  line-height: 2;
+  
+}
+
+footer .total .top .sitemap {
+
+  width: 40%;
+}
+
+footer .total .top .sitemap dl.menu {
+
+  display: flex;
+  flex-wrap: wrap;
+  height: 160px;
+}
+
+footer .total .top .sitemap dl.menu dt {
+
+  width: 100%;
+}
+
+footer .total .top .sitemap dl.menu dd {
+    
+  width: 50%;
+}
+
+footer .total .top .sitemap dl.menu dd a {
+    
+}
+
+footer .total .top .chanel {
+    
+  width: 25%;
+}
+
+footer .total .top .chanel dl {
+    
+}
+
+footer .total .top .chanel dl dt {
+    
+}
+
+footer .total .top .chanel dl dd {
+    
+}
+
+footer .total .top .chanel dl dd a {
+    
+} 
+
+footer .total .top .customer {
+    
+  width: 25%;
+} 
+
+footer .total .top .customer dl {
+    
+} 
+
+footer .total .top .customer dl dt {
+    
+} 
+
+footer .total .top .customer dl dd {
+    
+} 
+footer .total .top .customer dl dd a {
+    
+} 
+
+footer .total .top .way {
+    
+  width: 25%;
+} 
+
+footer .total .top .way dl {
+    
+}
+
+footer .total .top .way dl h3 {
+    
+}
+
+footer .total .top .way dl h3 a {
+    
+}
+
+footer .total .top .way dt {
+    
+}
+
+footer .total .top .way dd {
+    
+}
+
+footer .total .top .way dd a {
+    
+}
 
 

@@ -21,6 +21,11 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   width: 100%;
   margin: 0 auto;
 }
+
+.inner {
+  width: 100%;
+  margin: 0 auto;
+}
 .innerPadding { /* 카멜케이스방식:첫자소문자로시작,다른단어첫자는 대문자로시작 */
   padding-top:20px;
   padding-bottom:60px; 
@@ -46,6 +51,8 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   font-size: 15px;
 /*   font-weight: 700; */
 }
+
+
 /* flex */
 .flex {
   display: flex;
@@ -100,5 +107,6 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 .margin {
   margin: 200 auto;
 }
+
 
 
