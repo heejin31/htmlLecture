@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pf3:POSCO</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
@@ -28,9 +29,11 @@
     />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/mobile_header.css" />
     <link rel="stylesheet" href="css/title.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       type="text/javascript"
@@ -216,6 +219,15 @@
           <h2>포스코 로고</h2>
         </div>
       </div>
+
+      <div class="mobile-header hide">
+        <h1><a href="">포스코</a></h1>
+        <div class="tnb">
+          <button>Day</button>
+          <a href="" class="search">검색</a>
+          <a href="" class="ham">전체메뉴</a>
+        </div>
+      </div>
     </header>
 
     <!-- 타이틀영역 -->
@@ -369,7 +381,7 @@
               >
               <a href="" class="p2">2022.07.27</a>
             </div>
-            <div class="newsh">
+            <!-- <div class="newsh">
               <a href="" class="p1"
                 >[6편] 썸남이 없어진 건에 대하여-공<br />개고백?</a
               >
@@ -398,7 +410,7 @@
                 >[10편] 썸남이 없어진 건에 대하여-공개고백?</a
               >
               <a href="" class="p2">2022.07.27</a>
-            </div>
+            </div> -->
           </div>
 
           <a href="">POSCO Newsroom 바로가기</a>
@@ -454,14 +466,39 @@
           </div>
         </div>
         <div class="sns">
-          <a href="">유투브</a>
-          <a href="">링크드인</a>
-          <a href="">페이스북</a>
-          <a href="">인스타그램</a>
+          <ul>
+            <li><a href="#" class="img-youtube">유투브</a></li>
+            <li><a href="#" class="img-linkedin">링크드인</a></li>
+            <li><a href="#" class="img-facebook">페이스북</a></li>
+            <li><a href="#" class="img-insta">인스타그램</a></li>
+          </ul>
         </div>
-        <div class="terms"></div>
-        <div class="copyright"></div>
-        <div class="right"></div>
+        <div class="terms">
+          <ul>
+            <li><a href="#">이용약관</a></li>
+            <li>
+              <a href="#"><strong>개인정보처리방침</strong></a>
+            </li>
+            <li><a href="#">영상정보처리기기 운영-관리 방침</a></li>
+            <li><a href="#">이메일주소무단수집거부</a></li>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">포스코 기업시민보고서</a></li>
+            <li>
+              <address>
+                (우)37859 경상북도 포항시 남구 동해안로 6261(포항시 남구
+                괴동동1)
+              </address>
+            </li>
+            <li><address>대표전화:054-220-0114,02-3457-0114</address></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>(c)POSCO,All rights reserved.</p>
+        </div>
+        <div class="right">
+          <a href="#"><img src="img/kwac_posco.png" /></a>
+        </div>
       </div>
     </footer>
   </body>

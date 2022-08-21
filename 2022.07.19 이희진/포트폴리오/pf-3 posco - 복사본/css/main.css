@@ -139,6 +139,7 @@
 
 #products .inner div{
   text-align: center;
+  overflow: hidden;
 }
 
 #products .inner div button { 
@@ -230,7 +231,6 @@
 #bottom div.msg .news {  
   display: flex;
   gap: 30px;
-  width: calc(50% - 10px);
 }
 
 #bottom div.msg div.news  {

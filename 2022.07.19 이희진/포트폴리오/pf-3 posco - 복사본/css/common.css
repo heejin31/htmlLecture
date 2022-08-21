@@ -49,7 +49,7 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 .h5 {
   font-size: 15px;
-/*   font-weight: 700; */
+  font-weight: 700;
 }
 
 

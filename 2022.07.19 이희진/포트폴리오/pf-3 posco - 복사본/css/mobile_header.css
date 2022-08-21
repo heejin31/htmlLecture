@@ -1,0 +1,60 @@
+#top div.mobile-header {
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+}
+
+#top div.mobile-header h1 a {
+  margin-left: 26px;
+  font-size: 0;
+  display: block;
+  background-image: url(../img/posco.svg);
+  width: 100px;
+  height: 66px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#top div.mobile-header .tnb a.search {  
+  background-image: url(../img/search.svg);
+  width: 20px;
+  font-size: 0;
+  display: block;
+  background-size: cover;
+}
+
+
+
+#top div.mobile-header .tnb {  
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+
+
+
+
+#top div.mobile-header .tnb a.ham {  
+  display: block;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-size: 0;
+  width: 20px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#top div.mobile-header .tnb a.ham::before {
+  content: "";  
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: #000;
+  border-top: 1px solid #000;
+}
