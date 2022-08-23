@@ -108,5 +108,18 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   margin: 200 auto;
 }
 
+.arrow {
+  position: relative;
+}
 
-
+.arrow::after {
+  content: "";
+  background-image: url(../img/ico.png);
+  display: inline-block;
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: -14px;
+  top: 4px;
+}

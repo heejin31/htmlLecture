@@ -11,7 +11,7 @@
 				position:absolute;
 /*				top:50%;
 				left:50%;*/
-				animation:rot 4s;
+				animation:rot 4s ;
 				animation-iteration-count: infinite;
 				}
 				@keyframes rot {
@@ -19,7 +19,7 @@
 						
 					}
 					50%{
-
+                        
 					}
 					100%{
 						transform: rotate(360deg);
@@ -33,7 +33,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
+	// $("#in2").css({"left":"calc(50% - 100px)","top":"calc(50% - 100px)"});//정중앙 배치
 	$("#in2").css({"left":"calc(50% - 100px)","top":"calc(50% - 100px)"});
+	
 });
 </script>
 </head>

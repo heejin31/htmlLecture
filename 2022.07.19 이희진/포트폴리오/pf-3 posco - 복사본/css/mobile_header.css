@@ -15,6 +15,10 @@
   height: 66px;
   background-size: cover;
   background-repeat: no-repeat;
+  }
+
+#top div.mobile-header .tnb a {
+  font-size: 0;
 }
 
 #top div.mobile-header .tnb a.search {  

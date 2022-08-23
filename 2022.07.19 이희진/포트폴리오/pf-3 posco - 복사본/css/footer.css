@@ -117,16 +117,27 @@ footer .total .top .way dl a {
 }
 
 
-footer .total .top .way dt {
+footer .total .top .way dl dt {
     
 }
 
-footer .total .top .way dd {
+footer .total .top .way dl dt {
+    
+}
+footer .total .top .way dl dt a.direct {
+  position: relative;
     
 }
 
-footer .total .top .way dd a {
-    
+footer .total .top .way dl dt a.direct::after {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/footer_ico_plus.png);
+  background-size: cover;
+  width: 15px;
+  height: 15px; 
+  position: absolute;
+  right: -17%;
 }
 
 footer .total .sns ul {
@@ -208,10 +219,10 @@ footer .total .right a {
 
 footer .total .right a img {
   
-  width: 60px;
+  width: 65px;
   height: 40px;
   background-size: cover;
   position: absolute;
-  right: 5%;
+  right: 6%;
   bottom: 25%;
 }

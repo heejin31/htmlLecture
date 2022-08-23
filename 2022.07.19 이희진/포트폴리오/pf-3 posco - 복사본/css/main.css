@@ -18,7 +18,7 @@
   display: flex;
   gap: 25px;
   align-items: flex-end;
-  margin-left: 400px;
+  margin-left: 380px;
 }
 
 #products .inner .wrap .po h2 {
@@ -28,6 +28,8 @@
 
 #products .inner .wrap .po p {   
   
+  font-size: 18px;
+  color: #333;
 }
 
 
@@ -56,6 +58,11 @@
   box-sizing: border-box;
 }
 
+#products .inner .wrap .photo .text-on-img .background-wrap1:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
 #products .inner .wrap .photo .text-on-img .background-wrap2 {
   background-image: url(../img/slide_02.jpg);
   width: 500px;
@@ -67,6 +74,11 @@
   padding-top: 266px;
   box-sizing: border-box;
   
+}
+
+#products .inner .wrap .photo .text-on-img .background-wrap2:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 
 #products .inner .wrap .photo .text-on-img .background-wrap3 {
@@ -81,6 +93,11 @@
   box-sizing: border-box;
 }
 
+#products .inner .wrap .photo .text-on-img .background-wrap3:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
 #products .inner .wrap .photo .text-on-img .background-wrap4 {
   background-image: url(../img/slide_04.jpg);
   width: 500px;
@@ -91,6 +108,11 @@
   padding-left: 20px;
   padding-top: 266px;
   box-sizing: border-box;
+}
+
+#products .inner .wrap .photo .text-on-img .background-wrap4:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 
 #products .inner .wrap .photo .text-on-img .background-wrap5 {
@@ -105,6 +127,10 @@
   box-sizing: border-box;
 }
 
+#products .inner .wrap .photo .text-on-img .background-wrap5:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
 #products .inner .wrap .photo .text-on-img .background-wrap6 {
   background-image: url(../img/slide_06.jpg);
   width: 500px;
@@ -115,6 +141,10 @@
   padding-left: 20px;
   padding-top: 266px;
   box-sizing: border-box;
+}
+#products .inner .wrap .photo .text-on-img .background-wrap6:hover {
+   transform: scale(1.1);
+   transition: all 0.5s;
 }
 
 #products .inner .wrap .photo .text-on-img .background-wrap7 {
@@ -162,7 +192,7 @@
   display: flex;
   gap: 20px;
   align-items: flex-end;
-  margin-left: 400px;
+  margin-left: 380px;
 }
 
 #esg div.inner div.esg h3 {
@@ -172,6 +202,8 @@
 
 #esg div.inner div.esg p {
 
+  font-size: 18px;
+  color: #333;
 }
 
 #esg div.inner div.img {
@@ -184,21 +216,23 @@
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
-  line-height: 1.5;
   margin-bottom: 30px;
 }
 
 #esg div.inner div.report h3 {
-  font-size: 20px;
-  color: blue;
+  font-size: 30px;
+  color: #009ee5;
+  font-weight: 1000;
 }
 
 #esg div.inner div.report p {
   line-height: 1.5;
+  font-size: 14px;
+  font-weight: 800;
 }
 
 #esg div.inner a {  
-  border: 1px solid #ccc;
+  border: 1px solid black;
   display: block;
   align-self: center;
   width: 110px;
@@ -233,9 +267,9 @@
   gap: 30px;
 }
 
-#bottom div.msg div.news  {
-  
+#bottom div.msg .news .newsh { 
 }
+
 #bottom div.msg div.news .newsh::before {
   content: ""; 
   display: block;
@@ -245,50 +279,121 @@
   height: 200px;
 }
 
+
+
+
 #bottom div.msg div.news .newsh a.p1 {
   
-  color: #999;
-  font-weight: 800;
-  font-size: 21px;
+  color: #666;
+  font-size: 20px;
   display: block;
   height: 50px;
+  margin-top: 30px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+#bottom div.msg div.news .newsh a.p1:hover {
+  color: #009ee5;
 }
 
 #bottom div.msg div.news .newsh a.p2 {
   
   font-size: 14px;
-  color: #999;
+  color: #666;
 }
 
+
+#bottom div.msg div.news .newsh:hover:nth-child(1)::before {   
+   filter: brightness(70%);
+   transition: all 0.5s;
+   opacity: 0.5;
+    
+}
 #bottom div.msg div.news .newsh:nth-child(1)::before {
-    background-image: url(../img/news_1.jpg);   
+    background-image: url(../img/news_11.jpg);   
+}
+#bottom div.msg div.news .newsh:hover:nth-child(1)::before {   
+    filter: brightness(70%);
+    transition: all 0.5s;
+    
+    
 }
 #bottom div.msg div.news .newsh:nth-child(2)::before {
-    background-image: url(../img/news_2.jpg);   
+    background-image: url(../img/news_22.jpg);   
+}
+#bottom div.msg div.news .newsh:hover:nth-child(2)::before {   
+    filter: brightness(70%);
+    transition: all 0.5s;
+   
+    
 }
 #bottom div.msg div.news .newsh:nth-child(3)::before {
     background-image: url(../img/news_3.jpg);   
 }
+#bottom div.msg div.news .newsh:hover:nth-child(3)::before {   
+    filter: brightness(70%);
+    transition: all 0.5s;
+   
+    
+}
 #bottom div.msg div.news .newsh:nth-child(4)::before {
     background-image: url(../img/news_4.jpg);   
+}
+#bottom div.msg div.news .newsh:hover:nth-child(4)::before {   
+    filter: brightness(70%);
+    transition: all 0.5s;
+    
+    
 }
 #bottom div.msg div.news .newsh:nth-child(5)::before {
     background-image: url(../img/news_5.jpg);   
 }
+#bottom div.msg div.news .newsh:hover:nth-child(5)::before {   
+    filter: brightness(70%);
+    transition: all 0.5s;
+    
+}
 #bottom div.msg div.news .newsh:nth-child(6)::before {
     background-image: url(../img/news_6.jpg);   
+}
+#bottom div.msg div.news .newsh:hover:nth-child(6)::before {   
+    filter: brightness(70%);
+    transition: all 0.5s;
+    
 }
 #bottom div.msg div.news .newsh:nth-child(7)::before {
     background-image: url(../img/news_7.jpg);   
 }
+#bottom div.msg div.news .newsh:hover:nth-child(7)::before {   
+    filter: brightness(70%);
+    transition: all 0.5s;
+    
+}
 #bottom div.msg div.news .newsh:nth-child(8)::before {
     background-image: url(../img/news_8.jpg);   
+}
+#bottom div.msg div.news .newsh:hover:nth-child(8)::before {   
+    filter: brightness(70%);
+    transition: all 0.5s;
+    
 }
 #bottom div.msg div.news .newsh:nth-child(9)::before {
     background-image: url(../img/news_9.jpg);   
 }
+#bottom div.msg div.news .newsh:hover:nth-child(9)::before {   
+    filter: brightness(70%);
+    transition: all 0.5s;
+    
+}
 #bottom div.msg div.news .newsh:nth-child(10)::before {
     background-image: url(../img/news_10.jpg);   
+}
+#bottom div.msg div.news .newsh:hover:nth-child(10)::before {   
+    filter: brightness(70%);
+    transition: all 0.5s;
+    
 }
 
 #bottom div.msg div.ani {
@@ -319,6 +424,22 @@
   font-size: 10px;
 }
 
+#quick {  
+  position: fixed;  
+  right: 70px;
+  bottom: 100px;
+}
+
+#quick a {
+  
+  background-image: url(../img/top_btn.png);
+  background-size: cover;
+  width: 50px;
+  height: 65px;
+  display: block;
+  font-size: 0px;
+  position: absolute;
+}
 
 
 

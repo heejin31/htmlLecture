@@ -75,15 +75,15 @@
 			}
 	div#area2{
 		background: #FF6;
-		opacity:0;
+		opacity:1;
 		}
 	div#area3{
 		background: #CCF;
-		opacity:0;
+		opacity:1;
 		}
 	div#area4{
 		background: #099;
-		opacity:0;
+		opacity:1;
 		}
 	.fixed{
 		position:fixed !important;
@@ -99,14 +99,18 @@
 <script>
 	$(document).ready(function(	){
 			//문서를 스크롤하면 실행해라
-			var m=$("div#menu ul").offset().top;
-			var a1=$("div#area1").offset().top-$("div#area1").height()/2;
+			var m=$("div#menu").offset().top;
+			var a1=$("div#area1").offset().top; //-$("div#area1").height()/2;
 			var a2=$("div#area2").offset().top;
 			var a3=$("div#area3").offset().top;
 			var a4=$("div#area4").offset().top;
 			console.log(m);
-			console.log(a1);
-			$(document).on("scroll",function(){
+			console.log("첫번째div의위치:"+al);
+			console.log("두번째div의위치:"+a2);
+			console.log("세번째div의위치:"+a3);
+			console.log("네번째div의위치:"+a4);
+			$(document).on("scroll",function(){//스크롤이벤트
+				console.log($(window).scrollTop());
 				//메뉴div안의 ul의 스타일을 지정하시오(position값을 fixed로)
 				if($(window).scrollTop()>m){ //$(window).scrollTop()은 창의 스크롤바상단위치값을 의미
 					$("div#menu ul").css("position","fixed").css("top",0);

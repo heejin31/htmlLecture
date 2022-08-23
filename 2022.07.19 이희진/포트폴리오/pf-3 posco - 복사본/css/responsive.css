@@ -20,26 +20,97 @@
 }
 
 @media screen and (max-width:1029px) {
+  #top div.inner ul.gnb li a {
+    font-size: 14px;
+  }
+  
+}
+
+@media screen and (max-width:960px) {
   #top div.inner {
     display: none;
+  }
+  #title {
+    min-height: 700px;
+  }
+  #title div.work {
+    width: 80%
+  }
+  
+  #title div.bar {
+    
+  width: 80%;
+  left: 15%;
   }
   #top div.mobile-header {
     display: flex;
   }
+  
   #products .inner .wrap .po {
     margin-left: 20px;
+    display: initial;
+    text-align: initial;
+    line-height: 1.5;
   }
+  
+  
   .slick-wrap {
    left: -10% !important; 
   }
   #esg div.inner div.esg {
-    margin-left: 20px;
+    
+  margin-left: 3%;
+  display: initial;
+  line-height: 1.5;
   }
+
+  
+  
+  #esg div.inner div.img img {
+    
+  width: 100vw;
+  }
+  
+  #esg div.inner div.report {
+    
+  display: grid;
+  }
+
   #bottom {
     overflow-x: hidden;
   }
+  
+  #bottom div.msg .news {
+    
+  transform: scale(0.85);
+  }
+  
+  #bottom div.msg > a {
+    margin-top: 20px;
+  }
+  
+  /*footer*/
+  footer .total {
+    width: 95%
+  }
+  
+  footer .total .top {    
+  display: initial;
+  }
+  footer .total .top .sitemap dl.menu {
+    display: none;
+  }
+  footer .total .top .chanel dl dd {
+    display: none;
+  }
+  
+  footer .total .top .customer dl dd {
+    display: none;
+  }
+  footer .total .top dd {
+   display: none;
+    
 }
-
 
 
 @media screen and (max-width:480px) {
@@ -50,3 +121,4 @@
     display: flex;
   }
 }
+
